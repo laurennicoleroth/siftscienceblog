@@ -47,14 +47,31 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+	font: 400 16px ProximaNova,"Helvetica Neue",Helvetica,Arial;
 }
 
 body {
 	margin: 0;
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+	font-size: 16px;
+  line-height: 1.4;
+  position: relative;
+}
+
+#masthead {
+	background: #f7ba50;
+	color: white;
+}
+
+#masthead a {
+	color: white;
 }
 
 article,
