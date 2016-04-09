@@ -33,6 +33,11 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
+		<nav id="user-navigation" class="user-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="user-menu" aria-expanded="false"><?php esc_html_e( 'User Menu', '_s' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_id' => 'user-menu' ) ); ?>
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
