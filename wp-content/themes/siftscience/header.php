@@ -37,6 +37,7 @@
 		<nav id="utility-nav" class="utility-nav" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'utility-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
