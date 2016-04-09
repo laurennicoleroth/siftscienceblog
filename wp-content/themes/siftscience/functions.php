@@ -47,6 +47,17 @@ function siftscience_setup() {
 		'primary' => esc_html__( 'Primary', 'siftscience' ),
 	) );
 
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'utility-menu' => __( 'Utility Menu' ),
+    )
+  );
+}
+
+add_action( 'init', 'register_my_menus' );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
