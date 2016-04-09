@@ -22,23 +22,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'siftscience' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<a href="/" class="sift-brand">sift science</a>
-
+			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<li><a href="#">one</a></li>
-			<li><a href="#">two</a></li>
-			<li><a href="#">three</a></li>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-
-		<nav id="utility-nav">
-			<span class="console-login"></span><div class="veggieburger-wrap"><svg class="veggieburger"><rect y="0" width="24" height="4"></rect><rect y="8" width="24" height="4"></rect><rect y="16" width="24" height="4"></rect></svg></div>
-		</nav><!--#utility-navigation>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

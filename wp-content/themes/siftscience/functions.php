@@ -76,6 +76,17 @@ function siftscience_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	$args = array(
+    'header-text' => array(
+        'site-title',
+        'site-description',
+    ),
+    'size' => 'medium',
+	);
+
+	add_theme_support( 'site-logo', $args );
+
 }
 endif;
 add_action( 'after_setup_theme', 'siftscience_setup' );

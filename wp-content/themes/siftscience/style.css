@@ -83,7 +83,6 @@ body {
 }
 
 .site-branding {
-	border: 1px solid red;
 	transition: background-color .5s,height .5s;
     background-color: transparent;
     box-shadow: 0 0 0 #fff;
