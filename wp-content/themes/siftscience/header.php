@@ -22,22 +22,26 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div id="site-branding">
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 
-		<nav id="utility-nav" class="utility-nav" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'utility-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
+
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+		<?php wp_nav_menu( array( 'theme_location' => 'utility-menu' ) ); ?>
 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+		<div id="banner">
+		<div id="banner-container">
+			<h1>Welcome To Sift Blog</h1>
+			<p>Other stuff</p>
+		</div>
+	</div>
