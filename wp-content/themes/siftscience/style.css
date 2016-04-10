@@ -52,31 +52,45 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 html {
-	font: 400 16px ProximaNova,"Helvetica Neue",Helvetica,Arial;
+	font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 
 body {
 	margin: 0;
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
 	font-size: 16px;
     line-height: 1.4;
     position: relative;
 }
 
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+    display: block
+}
+
 #masthead {
-	-webkit-transition: background-color .5s,height .5s;
-    -moz-transition: background-color .5s,height .5s;
-    transition: background-color .5s,height .5s;
-    background-color: transparent;
-    box-shadow: 0 0 0 #fff;
-    height: 80px;
-    padding: 0 2%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+	background: #f7ba50;
+	width: 100%;
+}
+
+#site-navigation {
+	display: inline-block;
+    vertical-align: middle;
+    margin-left: 4%;
+    min-width: 585px;
+    padding: 0 0 0 2%;
+}
+
+#utility-nav {
+	float: right;
+    font-size: 14px;
+    height: 100%;
+}
+
+.site-branding {
+    position: relative;
+    height: 20px;
+    width: 130px;
 }
 
 article,
@@ -576,45 +590,40 @@ a:active {
 --------------------------------------------------------------*/
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+
 }
 
 .main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
 }
 
 .main-navigation a {
-	display: block;
-	text-decoration: none;
+	font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 10px 20px;
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
+
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
+
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+
 }
 
 .main-navigation ul ul li {
@@ -694,11 +703,22 @@ a:active {
     body {
     	background: violet;
     }
+
+    #main-navigation {
+    	min-width: 500px;
+    	width: 45%;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
 	body {
 		background: blue;
+	}
+
+	#site-navigation {
+		margin-left: 0;
+	    min-width: inherit;
+	    width: 57.5%;
 	}
 }
 
@@ -708,10 +728,18 @@ a:active {
 	}
 
 	#masthead {
-	background: #fff;
-    height: 60px;
-    padding: 0 2% 0 5%;
-    position: absolute;
+		background: #fff;
+	    height: 60px;
+	    padding: 0 2% 0 5%;
+	    position: absolute;
+	}
+
+	#site-navigation {
+		display: none;
+	}
+
+	#utility-nav {
+		display: none;
 	}
 }
 
