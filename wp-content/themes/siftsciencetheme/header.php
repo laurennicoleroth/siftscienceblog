@@ -28,10 +28,10 @@
 		<div class="site-branding">
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 		</div><!-- .site-branding -->
-
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'siftsciencetheme' ); ?></button>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'siftsciencetheme' ); ?></button>
+
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'utility-menu' ) ); ?>
