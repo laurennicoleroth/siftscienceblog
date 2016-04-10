@@ -65,6 +65,20 @@ body {
     position: relative;
 }
 
+#masthead {
+	-webkit-transition: background-color .5s,height .5s;
+    -moz-transition: background-color .5s,height .5s;
+    transition: background-color .5s,height .5s;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    height: 80px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 article,
 aside,
 details,
@@ -675,6 +689,13 @@ a:active {
 /*--------------------------------------------------------------
 # Responsive menu
 --------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    body {
+    	background: violet;
+    }
+}
+
 @media (max-width: 992px) and (min-width: 768px) {
 	body {
 		background: blue;
@@ -684,6 +705,23 @@ a:active {
 @media (max-width: 767px) {
 	body {
 		background: red;
+	}
+
+	#masthead {
+	background: #fff;
+    height: 60px;
+    padding: 0 2% 0 5%;
+    position: absolute;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background: pink;
+	}
+
+	.menu-toggle {
+		border: 1px solid red;
 	}
 }
 
