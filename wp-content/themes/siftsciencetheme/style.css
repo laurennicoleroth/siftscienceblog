@@ -183,6 +183,18 @@ textarea {
 
 button {
 	overflow: visible;
+	width: 20px;
+  height: 20px;
+  background-image: url(http://th07.deviantart.net/fs70/150/i/2013/012/c/6/rock_01_png___by_alzstock-d5r84up.png);
+  background-repeat: no-repeat;
+}
+
+.menu-toggle div {
+  background-color: white;
+  border-radius: 2px 2px 2px 2px;
+  height: 4px;
+  margin-top: 4px;
+  width: 30px;
 }
 
 button,
@@ -353,6 +365,30 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+#masthead {
+	  -webkit-transition: background-color .5s,height .5s;
+    -moz-transition: background-color .5s,height .5s;
+    transition: background-color .5s,height .5s;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    height: 80px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#hero {
+	height: 380px;
+	background: #f7ba50;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 40px;
+  position: relative;
+  width: 100%;
 }
 
 blockquote:before,
@@ -526,6 +562,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: royalblue;
+	text-decoration: none;
 }
 
 a:visited {
@@ -547,14 +584,24 @@ a:active {
 	outline: 0;
 }
 
+.site-branding {
+	margin: 10px 0;
+	padding: 0;
+  position: absolute;
+}
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
 	float: left;
 	width: 100%;
+	display: inline-block;
+  vertical-align: middle;
+  margin-left: 13%;
+  margin-top: 15px;
+  min-width: 585px;
+  padding: 0 0 0 2%;
 }
 
 .main-navigation ul {
@@ -567,11 +614,20 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  position: relative;
+  padding: 5px 10px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
 }
 
 .main-navigation ul ul {
@@ -622,6 +678,20 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+}
+
+.menu-utility-container {
+	float: left;
+  font-size: 14px;
+  height: 100%;
+  margin-left: 5%;
+}
+
+li.menu-item-364 {
+	background: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 0;
 }
 
 /* Small menu. */
