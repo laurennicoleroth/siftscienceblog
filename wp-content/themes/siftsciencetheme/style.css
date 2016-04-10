@@ -687,6 +687,10 @@ a:active {
   margin-left: 5%;
 }
 
+li.menu-item-362 {
+	border-right: 1px solid white;
+}
+
 li.menu-item-364 {
 	background: none;
   border: 2px solid #fff;
