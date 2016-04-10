@@ -22,26 +22,19 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-
-	<header id="masthead" class="site-header" role="banner">
-		<div id="site-branding">
-			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-		</div><!-- .site-branding -->
-
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-
-		<?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
-
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-		<?php wp_nav_menu( array( 'theme_location' => 'utility-menu' ) ); ?>
-
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
-		<div id="banner">
-		<div id="banner-container">
-			<h1>Welcome To Sift Blog</h1>
-			<p>Other stuff</p>
-		</div>
+	<div class="blog">
+		<header class="light">
+			<a href="/" class="sift-brand">
+			</a>
+			<nav>
+				<li>one</li>
+				<li>two</li>
+			</nav>
+			<div class="utility-nav">
+				utility nav
+			</div>
+			<div class="mobile-menu">
+				mobile menu
+			</div>
+		</header>
 	</div>
