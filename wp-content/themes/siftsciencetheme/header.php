@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+
 		</div><!-- .site-branding -->
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'siftsciencetheme' ); ?></button>
 		<nav id="site-navigation" class="main-navigation" role="navigation">

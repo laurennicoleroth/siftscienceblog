@@ -722,10 +722,30 @@ li.menu-item-364 {
 	.main-navigation ul {
 		display: block;
 	}
+
+	.site-branding {
+		border: 1px solid red;
+		height: 20px;
+    width: 130px;
+	}
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+	.sift-brand {
+    width: 22px;
+    border: 1px solid red;
+	}
 
+	.main-navigation {
+		margin-left: 3%;
+    min-width: inherit;
+	}
+
+	.site-branding {
+		border: 1px solid pink;
+		height: 20px;
+    width: 22px;
+	}
 }
 
 @media (max-width: 767px) {
