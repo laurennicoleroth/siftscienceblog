@@ -707,6 +707,49 @@ li.menu-item-364 {
 	display: block;
 }
 
+.menu-toggle {
+		display: none;
+}
+
+.main-navigation ul {
+		display: block;
+}
+
+@media (max-width: 1200px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+	.menu-toggle {
+		display: block;
+		float: right;
+	}
+
+	#masthead {
+		background: #fff;
+    height: 60px;
+    padding: 0 2% 0 5%;
+    position: absolute;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+
+}
+
 /*@media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
