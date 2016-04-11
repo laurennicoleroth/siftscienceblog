@@ -7,10 +7,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php cinnamon_entry_subtitle(); ?>
-				
+				<?php siftscience_entry_subtitle(); ?>
+
 				<div class="entry-featured-image">
-					<?php the_post_thumbnail(); ?>					
+					<?php the_post_thumbnail(); ?>
 				</div><!-- .entry-featured-image -->
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -18,7 +18,7 @@ get_header(); ?>
 						<?php the_content(); ?>
 						<?php
 							wp_link_pages( array(
-								'before' => '<div class="page-links">' . __( 'Pages:', 'cinnamon' ),
+								'before' => '<div class="page-links">' . __( 'Pages:', 'siftscience' ),
 								'after'  => '</div>',
 							) );
 						?>
@@ -36,5 +36,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
+
 <?php get_footer(); ?>

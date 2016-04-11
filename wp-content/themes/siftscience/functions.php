@@ -1,11 +1,53 @@
 <?php
 /**
- * siftscience functions and definitions.
+ * Siftscience functions and definitions
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package siftscience
+ * @package Siftscience
  */
+
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 640; /* pixels */
+}
+
+/**
+ * Get pluggable-by-translation Google fonts' URL
+ */
+if( ! function_exists( 'siftscience_googlefonts_url' ) ) :
+function siftscience_googlefonts_url( $editor = false ){
+    $fonts_url = '';
+
+    /* Translators: If there are characters in your language that are not
+    * supported by Lato, translate this to 'off'. Do not translate
+    * into your own language.
+    */
+    $lato = _x( 'on', 'Lato font: on or off', 'siftscience' );
+
+    if ( 'off' !== $lato ) {
+        $font_families = array();
+
+        if ( 'off' !== $lato ) {
+
+        	if( $editor ){
+        		$font_families[] = 'Lato:400,900,400italic,900italic';
+        	} else {
+	            $font_families[] = 'Lato:300,400,900,300italic,400italic,900italic';
+        	}
+        }
+
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+
+        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+    }
+
+    return $fonts_url;
+}
+endif;
 
 if ( ! function_exists( 'siftscience_setup' ) ) :
 /**
@@ -16,11 +58,12 @@ if ( ! function_exists( 'siftscience_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function siftscience_setup() {
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on siftscience, use a find and replace
-	 * to change 'siftscience' to the name of your theme in all the template files.
+	 * to change 'siftscience' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'siftscience', get_template_directory() . '/languages' );
 
@@ -28,23 +71,15 @@ function siftscience_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'siftscience' ),
+		'primary' => __( 'Primary Menu', 'siftscience' ),
 	) );
 
 	/*
@@ -52,79 +87,91 @@ function siftscience_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 
 	/*
 	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
+	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
 		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
 	) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'siftscience_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-}
-endif;
-add_action( 'after_setup_theme', 'siftscience_setup' );
+	// Adding editor style
+	add_editor_style( array(
+		siftscience_googlefonts_url( true ),
+		'editor.css'
+	) );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function siftscience_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'siftscience_content_width', 640 );
+	// Adding title tag support
+	add_theme_support( 'title-tag' );
 }
-add_action( 'after_setup_theme', 'siftscience_content_width', 0 );
+endif; // siftscience_setup
+add_action( 'after_setup_theme', 'siftscience_setup' );
 
 /**
  * Register widget area.
  *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
+if( ! function_exists( 'siftscience_widgets_init' ) ) :
 function siftscience_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'siftscience' ),
+		'name'          => __( 'Sidebar', 'siftscience' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'siftscience' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
 	) );
 }
+endif;
 add_action( 'widgets_init', 'siftscience_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
+if ( ! function_exists( 'siftscience_scripts' ) ) :
 function siftscience_scripts() {
-	wp_enqueue_style( 'siftscience-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'siftscience-google-font', siftscience_googlefonts_url() );
 
-	wp_enqueue_script( 'siftscience-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_style( 'siftscience-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' );
 
-	wp_enqueue_script( 'siftscience-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'siftscience-script', get_template_directory_uri() . '/js/siftscience.js', array( 'jquery' ), '20150420', true );
+
+	wp_enqueue_script( 'siftscience-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'siftscience-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+endif;
 add_action( 'wp_enqueue_scripts', 'siftscience_scripts' );
+
+/**
+ * Display color scheme based on one accent color choosen by user
+ */
+if( ! function_exists( 'siftscience_color_scheme' ) ) :
+function siftscience_color_scheme(){
+	$color_scheme = get_theme_mod( 'color_scheme', false );
+
+	if( $color_scheme ){
+		wp_add_inline_style( 'siftscience-style', $color_scheme );
+	}
+}
+endif;
+add_action( 'wp_enqueue_scripts', 'siftscience_color_scheme' );
+
+/**
+ * Load simple color adjuster library
+ */
+if( ! class_exists( 'siftscience_Simple_Color_Adjuster' ) ){
+	require get_template_directory() . '/inc/simple-color-adjuster.php';
+}
 
 /**
  * Implement the Custom Header feature.
@@ -147,6 +194,7 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Load Jetpack compatibility file.
+ * Third party plugins compatibility
  */
-require get_template_directory() . '/inc/jetpack.php';
+require get_template_directory() . '/inc/plugin-compatibility-jetpack.php';
+require get_template_directory() . '/inc/plugin-compatibility-subtitles.php';
