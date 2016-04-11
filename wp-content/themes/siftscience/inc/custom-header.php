@@ -37,12 +37,6 @@ function siftscience_header_style() {
 
 	// If we get this far, we have custom styles. Let's do this.
 	?>
-	<style type="text/css">
-		#page .page-header .background{
-			background: url( <?php echo esc_url( $header_image ); ?> ) no-repeat center center;
-			background-size: cover;
-		}
-	</style>
 	<?php
 }
 endif; // siftscience_header_style

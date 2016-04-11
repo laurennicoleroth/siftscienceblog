@@ -686,12 +686,16 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 .main-navigation a {
-  display: block;
-  text-decoration: none;
-  padding: 7px 15px;
-  color: #2d1f0f;
-  font-size: 16px;
-  font-size: 1.6rem;
+	  text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 7px 15px;
+    color: #2d1f0f;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
 }
 
 /* Small menu */
@@ -738,7 +742,7 @@ a:hover, a:focus, a:active {
   }
 
   .not-touch-device #site-navigation {
-    float: right;
+    float: left;
     width: auto;
     margin-top: 6px;
     background: transparent;
@@ -1121,8 +1125,9 @@ body {
   padding: 90px 15px 100px;
   border-bottom: 1px solid #EFEFEF;
 }
+
 .page-header .background {
-  background: #F2E6D7;
+  background: #f7ba50;
   content: '';
   position: absolute;
   top: 0;
@@ -1216,11 +1221,18 @@ body {
 */
 @media screen and (min-width: 960px) {
   #masthead {
-    border-bottom: 1px solid #EFEFEF;
+  	 background: #f7ba50;
   }
 
   .site-branding {
     float: left;
+  }
+
+  #morpheo-logo {
+  	height: 33px;
+    width: 130px;
+  	background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo.png');
+  	margin-top: 9px;
   }
 
   .page-header {
