@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package SiftScience
+ * @package siftscience
  */
 
 ?>
@@ -15,7 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'siftscience' ), 'Sift Science Blog' ); ?>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'siftscience' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'siftscience' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'siftscience' ), 'siftscience', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

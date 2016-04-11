@@ -1,8 +1,8 @@
 <?php
 /**
- * SiftScience Theme Customizer.
+ * siftscience Theme Customizer.
  *
- * @package SiftScience
+ * @package siftscience
  */
 
 /**

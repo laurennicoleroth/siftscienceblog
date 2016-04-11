@@ -1,10 +1,10 @@
 <?php
 /**
- * SiftScience functions and definitions.
+ * siftscience functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package SiftScience
+ * @package siftscience
  */
 
 if ( ! function_exists( 'siftscience_setup' ) ) :
@@ -19,7 +19,7 @@ function siftscience_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on SiftScience, use a find and replace
+	 * If you're building a theme based on siftscience, use a find and replace
 	 * to change 'siftscience' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'siftscience', get_template_directory() . '/languages' );
@@ -46,17 +46,6 @@ function siftscience_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'siftscience' ),
 	) );
-
-
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'utility-menu' => __( 'Utility Menu' ),
-    )
-  );
-}
-
-add_action( 'init', 'register_my_menus' );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -87,17 +76,6 @@ add_action( 'init', 'register_my_menus' );
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-
-	$args = array(
-    'header-text' => array(
-        'site-title',
-        'site-description',
-    ),
-    'size' => 'medium',
-	);
-
-	add_theme_support( 'site-logo', $args );
-
 }
 endif;
 add_action( 'after_setup_theme', 'siftscience_setup' );
