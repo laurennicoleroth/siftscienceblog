@@ -41,6 +41,9 @@
 				<button class="menu-toggle dashicons dashicons-menu"><?php _e( 'Primary Menu', 'siftscience' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<nav id="user-links" role="user-management">
+				<?php wp_nav_menu( array( 'theme_location' => 'user' ) ); ?>
+			</nav>
 		</div>
 	</header><!-- #masthead -->
 
