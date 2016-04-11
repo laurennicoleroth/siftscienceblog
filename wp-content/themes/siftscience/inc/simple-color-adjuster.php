@@ -2,31 +2,31 @@
 /**
  * A library for manipulating color: do SCSS' lighten() and darken() using PHP easily
  * Purposely made for WordPress theming due to scss.inc.php which triggers too much alert on theme-check
- * 
+ *
  * @author Fikri Rasyid
- * 
+ *
  * Simple Color Adjuster is developed by modifying following resources:
- * 
+ *
  * scssphp library - http://leafo.net/scssphp/
  * License: Distributed under the terms of GNU General Public License v3
  * Copyright: Leaf Corcoran, http://leafo.net/
- * 
+ *
  * Twenty Fifteen - https://wordpress.org/themes/twentyfifteen
  * License: Distributed under the terms of GNU General Public License
  * Copyright: The WordPress team, http://wordpress.org
- * 
+ *
  * Opus - http://fikrirasy.id/portfolio/opus
  * License: Distributed under the terms of GNU General Public License
  * Copyright: Fikri Rasyid, http://fikrirasy.id
  */
-class Cinnamon_Simple_Color_Adjuster{
+class Siftscience_Simple_Color_Adjuster{
 
 	/**
 	 * Method for lightening
-	 * 
+	 *
 	 * @param string 	hexacode
 	 * @param float 	0 - 100 (percentage)
-	 * 
+	 *
 	 * @return string 	hexacode
 	 */
 	public function lighten( $hex, $amount ){
@@ -36,26 +36,26 @@ class Cinnamon_Simple_Color_Adjuster{
 
 	/**
 	 * Method for darkening
-	 * 
+	 *
 	 * @param string 	hexacode
 	 * @param float 	0 - 100 (percentage)
-	 * 
+	 *
 	 * @return string 	hexacode
 	 */
 	public function darken( $hex, $amount ){
 
 		$amount = 0 - $amount;
 
-		return $this->adjust_color( $hex, $amount );		
+		return $this->adjust_color( $hex, $amount );
 	}
 
 	/**
 	 * Darken/Lighten color based on hexacode and percentage given
 	 * The code is based on Leaf Corcoran's SCSS compiler based on PHP which is released under GPL v3
-	 * 
+	 *
 	 * @param string 	hexacode
 	 * @param float 	lighten / darken percentage -100 - 100
-	 * 
+	 *
 	 * @return string 	hexacode
 	 */
 	public function adjust_color( $hex, $amount ){
@@ -81,7 +81,7 @@ class Cinnamon_Simple_Color_Adjuster{
 	/**
 	 * Convert hexacode color into array of RGB
 	 * The code is based on Twenty Fifteen's twentyfifteen_hex2rgb() which is released under GPL v2
-	 * 
+	 *
 	 * @param string 	hexacode
 	 * @return array 	rgb value
 	 */
@@ -106,7 +106,7 @@ class Cinnamon_Simple_Color_Adjuster{
 	/**
 	 * Convert array of RGB into hexacode color
 	 * The code is based on Opus Theme's Opus_Customizer->adjust_brightness() which is released under GPL v2
-	 * 
+	 *
 	 * @param array 	rgb value
 	 * @return param 	string hexacode
 	 */
@@ -122,11 +122,11 @@ class Cinnamon_Simple_Color_Adjuster{
 	/**
 	 * Convert RGB into HSL
 	 * The code is based on Leaf Corcoran's SCSS compiler based on PHP which is released under GPL v3
-	 * 
+	 *
 	 * @param int 	red of RGB
 	 * @param int 	green of RGB
 	 * @param int 	blue of RGB
-	 * 
+	 *
 	 * @return array of HSL value
 	 */
 	public function rgb_to_hsl( $red, $green, $blue ){
@@ -155,7 +155,7 @@ class Cinnamon_Simple_Color_Adjuster{
 				$h = 60 * ($r - $g) / $d + 240;
 		}
 
-		return array( fmod($h, 360), $s * 100, $l * 100);	
+		return array( fmod($h, 360), $s * 100, $l * 100);
 	}
 
 	/**
@@ -177,17 +177,17 @@ class Cinnamon_Simple_Color_Adjuster{
 			if ($h * 3 < 2)
 				return $m1 + ($m2 - $m1) * (2/3 - $h) * 6;
 
-			return $m1;	
+			return $m1;
 	}
 
 	/**
 	 * Convert HSL to RGB
 	 * The code is based on Leaf Corcoran's SCSS compiler based on PHP which is released under GPL v3
-	 * 
+	 *
 	 * @param float 	hue
 	 * @param float 	saturation
 	 * @param float 	lightenss
-	 * 
+	 *
 	 * @return array 	RGB color
 	 */
 	public function hsl_to_rgb( $hue, $saturation, $lightness ){
@@ -208,6 +208,6 @@ class Cinnamon_Simple_Color_Adjuster{
 
 		$out = array($r, $g, $b);
 
-		return $out;	
-	}	
+		return $out;
+	}
 }
