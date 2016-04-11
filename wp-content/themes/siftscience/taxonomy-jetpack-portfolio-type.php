@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Cinnamon
+ * @package Siftscience
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php cinnamon_paging_nav_newer(); ?>
+			<?php siftscience_paging_nav_newer(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php cinnamon_paging_nav_older(); ?>
+			<?php siftscience_paging_nav_older(); ?>
 
 		<?php else : ?>
 
