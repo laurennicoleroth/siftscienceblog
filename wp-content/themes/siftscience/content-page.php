@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package Cinnamon
+ * @package Siftscience
  */
 ?>
 
@@ -11,7 +11,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'cinnamon' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'siftscience' ),
 				'after'  => '</div>',
 			) );
 		?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Cinnamon
+ * @package Siftscience
  */
 ?>
 
@@ -9,7 +9,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'cinnamon' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'siftscience' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -17,9 +17,9 @@
 
 	<footer class="entry-footer">
 		<div class="entry-meta">
-			<?php cinnamon_posted_on(); ?>
+			<?php siftscience_posted_on(); ?>
 		</div><!-- .entry-meta -->
-		
-		<?php cinnamon_entry_footer(); ?>
+
+		<?php siftscience_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
