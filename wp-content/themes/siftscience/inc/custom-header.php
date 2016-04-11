@@ -1,32 +1,16 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature.
- *
- * You can add an optional custom header image to header.php like so ...
- *
-	<?php if ( get_header_image() ) : ?>
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-	</a>
-	<?php endif; // End header image check. ?>
- *
- * @link https://developer.wordpress.org/themes/functionality/custom-headers/
- *
- * @package siftscience
- */
-
-/**
  * Set up the WordPress core custom header feature.
  *
  * @uses siftscience_header_style()
+ * @uses siftscience_admin_header_style()
+ * @uses siftscience_admin_header_image()
  */
 function siftscience_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'siftscience_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'default-image'          => get_template_directory_uri() . '/images/siftscience-default-header.jpg',
+		'width'                  => 1440,
+		'height'                 => 450,
 		'wp-head-callback'       => 'siftscience_header_style',
 	) ) );
 }
@@ -34,43 +18,31 @@ add_action( 'after_setup_theme', 'siftscience_custom_header_setup' );
 
 if ( ! function_exists( 'siftscience_header_style' ) ) :
 /**
- * Styles the header image and text displayed on the blog.
+ * Styles the header image and text displayed on the blog
  *
  * @see siftscience_custom_header_setup().
  */
 function siftscience_header_style() {
-	$header_text_color = get_header_textcolor();
+	$header_image = get_header_image();
 
-	/*
-	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: HEADER_TEXTCOLOR.
-	 */
-	if ( HEADER_TEXTCOLOR === $header_text_color ) {
+	// Fallback to default image
+	if( ! $header_image ){
+		$header_image = get_template_directory_uri() . '/images/siftscience-default-header.jpg';
+	}
+
+	// Header image on page and single page is defined by featured image
+	if ( ( is_singular() || is_page() ) && ! is_front_page() ) {
 		return;
 	}
 
 	// If we get this far, we have custom styles. Let's do this.
 	?>
 	<style type="text/css">
-	<?php
-		// Has the text been hidden?
-		if ( ! display_header_text() ) :
-	?>
-		.site-title,
-		.site-description {
-			position: absolute;
-			clip: rect(1px, 1px, 1px, 1px);
+		#page .page-header .background{
+			background: url( <?php echo esc_url( $header_image ); ?> ) no-repeat center center;
+			background-size: cover;
 		}
-	<?php
-		// If the user has set a custom color for the text use that.
-		else :
-	?>
-		.site-title a,
-		.site-description {
-			color: #<?php echo esc_attr( $header_text_color ); ?>;
-		}
-	<?php endif; ?>
 	</style>
 	<?php
 }
-endif;
+endif; // siftscience_header_style
