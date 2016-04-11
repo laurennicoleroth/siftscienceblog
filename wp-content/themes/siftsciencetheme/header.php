@@ -39,6 +39,9 @@
 
 	</header><!-- #masthead -->
 	<div id="hero">
-
+		<div class="headline">
+			<h1>Welcome To Sift Blog!</h1>
+			<p>Where online fraud fighting, engineering innovations, industry insights, and startup life come together.</p>
+		</div>
 	</div>
 	<div id="content" class="site-content">

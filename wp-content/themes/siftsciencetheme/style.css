@@ -113,7 +113,7 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 36px;
 	margin: 0.67em 0;
 }
 
@@ -292,6 +292,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-weight: 600;
+  line-height: 1.1;
 }
 
 p {
@@ -389,6 +391,12 @@ body {
   padding-right: 40px;
   position: relative;
   width: 100%;
+}
+
+.headline {
+    color: white;
+    padding-top: 100px;
+    width: calc(100% - 320px - 40px);
 }
 
 blockquote:before,
@@ -715,6 +723,15 @@ li.menu-item-364 {
 		display: block;
 }
 
+.site-branding {
+    height: 27px;
+    width: 123px;
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo2.png');
+    background-position: -2px -2px;
+    background-size: 125px 26px;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 1200px) {
 	.menu-toggle {
 		display: none;
@@ -724,16 +741,18 @@ li.menu-item-364 {
 	}
 
 	.site-branding {
-		border: 1px solid red;
-		height: 20px;
-    width: 130px;
+    height: 27px;
+    width: 123px;
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo2.png');
+    background-position: -2px -2px;
+    background-size: 125px 26px;
+    background-repeat: no-repeat;
 	}
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
 	.sift-brand {
     width: 22px;
-    border: 1px solid red;
 	}
 
 	.main-navigation {
@@ -741,10 +760,28 @@ li.menu-item-364 {
     min-width: inherit;
 	}
 
+	#masthead {
+	  -webkit-transition: background-color .5s,height .5s;
+    -moz-transition: background-color .5s,height .5s;
+    transition: background-color .5s,height .5s;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    height: 80px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
 	.site-branding {
-		border: 1px solid pink;
-		height: 20px;
-    width: 22px;
+    height: 30px;
+    width: 30px;
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/hex-logo.png');
+    background-position: 0px 0px;
+    background-size: 30px 23px;
+    background-repeat: no-repeat;
 	}
 }
 
@@ -761,13 +798,29 @@ li.menu-item-364 {
     position: absolute;
 	}
 
+	.site-branding {
+    height: 20px;
+    width: 111px;
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png');
+    background-position: -6px -2px;
+    background-size: 120px 32px;
+    background-repeat: no-repeat;
+	}
+
 	.main-navigation ul {
 		display: none;
 	}
 }
 
 @media (max-width: 480px) {
-
+	.site-branding {
+    height: 20px;
+    width: 111px;
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png');
+    background-position: -6px -2px;
+    background-size: 120px 32px;
+    background-repeat: no-repeat;
+	}
 }
 
 /*@media screen and (min-width: 37.5em) {
