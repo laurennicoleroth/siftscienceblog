@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Siftscience
+ * @package Cinnamon
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php siftscience_paging_nav_newer(); ?>
+			<?php cinnamon_paging_nav_newer(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -24,12 +24,12 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'jetpack-portfolio' );
 				?>
 
 			<?php endwhile; ?>
 
-			<?php siftscience_paging_nav_older(); ?>
+			<?php cinnamon_paging_nav_older(); ?>
 
 		<?php else : ?>
 
@@ -40,5 +40,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
