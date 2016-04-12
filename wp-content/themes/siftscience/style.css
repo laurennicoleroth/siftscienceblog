@@ -1072,27 +1072,28 @@ body {
   background: white;
 }
 
-#masthead {
-  background: white;
+#masthead .site-branding {
+	/*background: url("http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png");*/
+  width: 279px;
+  height: 61px;
+  background-size: 130px 30px;
+  background-repeat: no-repeat;
+
 }
-#masthead .site-title {
-  float: left;
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-weight: 900;
-  padding: 17px 15px 17px;
-}
-#masthead .site-title a {
-  color: #2d1f0f;
-  text-decoration: none;
-  line-height: 1;
-  content: "";
-  display: table;
-}
+
 #masthead .site-logo-link {
   float: left;
   margin: 15px 15px 13px;
   line-height: 1;
+  border: 1px solid red;
+}
+
+.site-branding svg {
+	  background: url("http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png");
+    width: 145px;
+    height: 40px;
+    background-size: 145px 40px;
+    margin: 10px 30px;
 }
 
 .has-site-logo #masthead .site-title {
@@ -1102,24 +1103,24 @@ body {
 #site-navigation, #user-links {
   position: relative;
 }
+
 #site-navigation .menu-toggle {
   width: 32px;
-  height: 32px;
-  border: none;
-  font-size: 32px;
-  font-size: 3.2rem;
-  padding: 0;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  box-shadow: none;
-  position: absolute;
-  top: -40px;
-  right: 15px;
-  overflow: hidden;
-  background: white;
-  color: #2d1f0f;
+    height: 32px;
+    border: none;
+    font-size: 32px;
+    font-size: 4rem;
+    padding: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: absolute;
+    top: -50px;
+    right: 33px;
+    overflow: hidden;
+    background: white;
+    color: #b6b6b6;
 }
 
 .page-header {
@@ -1223,6 +1224,14 @@ body {
   	background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo.png');
   	margin-top: 9px;
   }
+
+  .site-branding svg {
+    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo.png');
+    width: 160px;
+    height: 50px;
+    background-size: 169px 45px;
+    margin: 10px 0px;
+}
 
   .page-header {
     padding: 200px 10px;

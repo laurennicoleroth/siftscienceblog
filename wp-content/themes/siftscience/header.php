@@ -24,6 +24,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrap">
 			<div class="site-branding">
+				<a id="site-logo-link" href="/"><svg></svg></a>
 				<?php
 					if( function_exists( 'jetpack_the_site_logo' ) ){
 						jetpack_the_site_logo();
