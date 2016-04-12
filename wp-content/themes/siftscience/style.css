@@ -635,26 +635,30 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-.main-navigation {
+.main-navigation, #user-links {
   clear: both;
   display: block;
   float: left;
   width: 100%;
   background: #FDFDFD;
-  border-top: 1px solid #EFEFEF;
 }
+
+#user-links {
+	float: right;
+}
+
 .main-navigation.toggled {
   border-bottom: 1px solid #EFEFEF;
 }
 .main-navigation .nav-menu {
   display: none;
 }
-.main-navigation ul {
+.main-navigation ul, #user-links ul {
   list-style: none;
   margin: 0;
   display: none;
 }
-.main-navigation ul ul li {
+.main-navigation ul ul li, #user-links ul ul li {
   padding-left: 30px;
 }
 .main-navigation ul ul li:last-child a {
@@ -685,11 +689,11 @@ a:hover, a:focus, a:active {
 .main-navigation li {
   position: relative;
 }
-.main-navigation a {
+.main-navigation a, #user-links a {
 	  text-transform: uppercase;
     display: block;
     text-decoration: none;
-    padding: 7px 15px;
+    padding: 7px 5px;
     color: #2d1f0f;
     font-size: 1.4rem;
     font-weight: 600;
@@ -741,7 +745,7 @@ a:hover, a:focus, a:active {
     border-top: 1px solid #EFEFEF;
   }
 
-  .not-touch-device #site-navigation {
+  .not-touch-device #site-navigation, .not-touch-device #user-links {
     float: left;
     width: auto;
     margin-top: 6px;
@@ -750,20 +754,20 @@ a:hover, a:focus, a:active {
   .not-touch-device #site-navigation .menu-toggle {
     display: none;
   }
-  .not-touch-device #site-navigation.main-navigation {
+  .not-touch-device #site-navigation.main-navigation, .not-touch-device #user-links {
     display: block;
     clear: none;
   }
-  .not-touch-device #site-navigation.main-navigation .nav-menu {
+  .not-touch-device #site-navigation.main-navigation .nav-menu, .not-touch-device #user-links {
     display: block;
   }
-  .not-touch-device #site-navigation.main-navigation ul {
+  .not-touch-device #site-navigation.main-navigation ul, .not-touch-device #user-links ul {
     position: relative;
     /**
     * Hover state
     */
   }
-  .not-touch-device #site-navigation.main-navigation ul li {
+  .not-touch-device #site-navigation.main-navigation ul li, .not-touch-device #user-links ul li {
     display: inline-block;
   }
   .not-touch-device #site-navigation.main-navigation ul li.menu-item-has-children > a {
@@ -1095,7 +1099,7 @@ body {
   display: none;
 }
 
-#site-navigation {
+#site-navigation, #user-links {
   position: relative;
 }
 #site-navigation .menu-toggle {
