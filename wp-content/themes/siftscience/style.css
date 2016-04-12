@@ -1,8 +1,6 @@
 /*
 Theme Name: Siftscience
-Theme URI: http://fikrirasy.id/portfolio/siftscience/
-Author: Fikri Rasyid
-Author URI: http://fikrirasy.id
+Author: Lauren Nicole Roth
 Description: Siftscience is responsive, custom theme for Sift Science
 Version: 1.1.0
 License: GNU General Public License v2 or later
@@ -75,6 +73,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 html {
+	font-family: sans-serif;
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
   overflow-y: scroll;
@@ -96,7 +95,7 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */
+  color: #555555;
 }
 
 article,
@@ -157,9 +156,10 @@ button,
 input,
 select,
 textarea {
-  color: #5F5E5E;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  color: #555555;
+  font-family: ProximaNova,"Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
 }
@@ -748,7 +748,7 @@ a:hover, a:focus, a:active {
   .not-touch-device #site-navigation, .not-touch-device #user-links {
     float: left;
     width: auto;
-    margin-top: 6px;
+    margin-top: 17px;
     background: transparent;
   }
   .not-touch-device #site-navigation .menu-toggle {
@@ -1073,7 +1073,6 @@ body {
 }
 
 #masthead .site-branding {
-	/*background: url("http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png");*/
   width: 279px;
   height: 61px;
   background-size: 130px 30px;
@@ -1089,7 +1088,7 @@ body {
 }
 
 .site-branding svg {
-	  background: url("http://localhost:8888/siftscience/wp-content/themes/siftscience/images/color-logo.png");
+	  background: url("images/color-logo.png");
     width: 145px;
     height: 40px;
     background-size: 145px 40px;
@@ -1221,12 +1220,12 @@ body {
   #morpheo-logo {
   	height: 33px;
     width: 130px;
-  	background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo.png');
+  	background-image: url('images/monochrome-logo.png');
   	margin-top: 9px;
   }
 
   .site-branding svg {
-    background-image: url('http://localhost:8888/siftscience/wp-content/themes/siftscience/images/monochrome-logo.png');
+    background-image: url('images/monochrome-logo.png');
     width: 160px;
     height: 50px;
     background-size: 169px 45px;
@@ -2297,4 +2296,68 @@ object {
     font-size: 2.4rem;
     margin-bottom: 90px;
   }
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-Light.eot');
+    src: url('fonts/proxima/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-Light.woff') format('woff'),url('fonts/proxima/ProximaNova-Light.ttf') format('truetype'),url('fonts/proxima/ProximaNova-Light.svg#ProximaNova') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-Reg.eot');
+    src: url('fonts/proxima/ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),url('fonts/ProximaNova/ProximaNova-Reg.woff') format('woff'),url('fonts/proxima/ProximaNova-Reg.ttf') format('truetype'),url('fonts/proxima/ProximaNova-Reg.svg#ProximaNova') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-Sbold.eot');
+    src: url('fonts/proxima/ProximaNova-Sbold.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-Sbold.woff') format('woff'),url('fonts/proxima/ProximaNova-Sbold.ttf') format('truetype'),url('fonts/proxima/ProximaNova-Sbold.svg#ProximaNova') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-Bold.eot');
+    src: url('fonts/proxima/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),url('fonts/proxima/ProximaNova-Bold.ttf') format('truetype'),url('fonts/proxima/ProximaNova-Bold.svg#ProximaNova') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-LightIt.eot');
+    src: url('fonts/proxima/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-LightIt.woff') format('woff'),url('fonts/proxima/ProximaNova-LightIt.ttf') format('truetype'),url('fonts/proxima/ProximaNova-LightIt.svg#ProximaNova') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-RegIt.eot');
+    src: url('fonts/proxima/ProximaNova-RegIt.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-RegIt.woff') format('woff'),url('fonts/proxima/ProximaNova-RegIt.ttf') format('truetype'),url('fonts/proxima/ProximaNova-RegIt.svg#ProximaNova') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-SboldIt.eot');
+    src: url('fonts/proxima/ProximaNova-SboldIt.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-SboldIt.woff') format('woff'),url('fonts/proxima/ProximaNova-SboldIt.ttf') format('truetype'),url('fonts/proxima/ProximaNova-SboldIt.svg#ProximaNova') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('fonts/proxima/ProximaNova-BoldIt.eot');
+    src: url('fonts/proxima/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),url('fonts/proxima/ProximaNova-BoldIt.woff') format('woff'),url('fonts/proxima/ProximaNova-BoldIt.ttf') format('truetype'),url('fonts/proxima/ProximaNova-BoldIt.svg#ProximaNova') format('svg');
+    font-weight: 700;
+    font-style: italic;
 }
