@@ -48,6 +48,7 @@
 		</div>
 	</header><!-- #masthead -->
 	<div class="page-header">
+		<div class="wrap">
 			<?php
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
@@ -56,6 +57,7 @@
 						<h1><?php wp_title(); ?></h1>
 					<?php endif;
 			?>
+		 </div>
 </div>
 
 
