@@ -656,8 +656,18 @@ a:hover, a:focus, a:active {
 .main-navigation ul, #user-links ul {
   list-style: none;
   margin: 0;
-  display: none;
+  /*display: none;*/
 }
+
+#menu-item-366 {
+	border-right: 1px solid white;
+}
+
+#menu-item-368 {
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
 .main-navigation ul ul li, #user-links ul ul li {
   padding-left: 30px;
 }
@@ -690,13 +700,10 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 .main-navigation a, #user-links a {
-	  text-transform: uppercase;
     display: block;
     text-decoration: none;
-    padding: 7px 5px;
     color: #2d1f0f;
     font-size: 1.4rem;
-    font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
     color: white;
@@ -1073,10 +1080,8 @@ body {
 }
 
 #masthead .site-branding {
-  width: 279px;
-  height: 61px;
-  background-size: 130px 30px;
-  background-repeat: no-repeat;
+    width: 185px;
+    height: 61px;
 
 }
 
