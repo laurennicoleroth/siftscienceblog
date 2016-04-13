@@ -47,7 +47,18 @@
 			</nav>
 		</div>
 	</header><!-- #masthead -->
+	<div class="page-header">
+		<div id="header-left">
+			<?php
+					if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<p><?php bloginfo('description'); ?> </p>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php endif;
+			?>
+	</div>
+</div>
 
-	<?php siftscience_page_header(); ?>
 
 	<div id="content" class="site-content wrap">

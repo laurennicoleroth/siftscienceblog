@@ -703,10 +703,11 @@ a:hover, a:focus, a:active {
     display: block;
     text-decoration: none;
     color: #2d1f0f;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1;
     text-transform: uppercase;
     color: white;
+    padding: 8px 7px;
 }
 
 /* Small menu */
@@ -1134,6 +1135,17 @@ body {
   border-bottom: 1px solid #EFEFEF;
 }
 
+.page-header h1 {
+	color: white;
+	font-weight: 600;
+  line-height: 1.1;
+  font-size: 36px;
+}
+
+.page-header h1 a, .page-header p {
+	color: white;
+}
+
 .page-header .background {
   background: #f7ba50;
   content: '';
@@ -1192,6 +1204,7 @@ body {
 
 .home .page-header {
   border: none;
+  background: #f7ba50;
 }
 
 /**
@@ -1199,7 +1212,7 @@ body {
 */
 @media screen and (min-width: 760px) {
   .page-header {
-    padding: 100px 10px;
+
   }
   .page-header .page-title {
     font-size: 32px;
@@ -1222,13 +1235,6 @@ body {
     float: left;
   }
 
-  #morpheo-logo {
-  	height: 33px;
-    width: 130px;
-  	background-image: url('images/monochrome-logo.png');
-  	margin-top: 9px;
-  }
-
   .site-branding svg {
     background-image: url('images/monochrome-logo.png');
     width: 160px;
@@ -1238,7 +1244,7 @@ body {
 }
 
   .page-header {
-    padding: 200px 10px;
+
   }
   .page-header .page-title {
     font-size: 42px;

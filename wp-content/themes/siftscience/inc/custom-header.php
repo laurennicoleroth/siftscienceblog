@@ -8,9 +8,6 @@
  */
 function siftscience_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'siftscience_custom_header_args', array(
-		'default-image'          => get_template_directory_uri() . '/images/siftscience-default-header.jpg',
-		'width'                  => 1440,
-		'height'                 => 450,
 		'wp-head-callback'       => 'siftscience_header_style',
 	) ) );
 }
@@ -23,12 +20,7 @@ if ( ! function_exists( 'siftscience_header_style' ) ) :
  * @see siftscience_custom_header_setup().
  */
 function siftscience_header_style() {
-	$header_image = get_header_image();
 
-	// Fallback to default image
-	if( ! $header_image ){
-		$header_image = get_template_directory_uri() . '/images/siftscience-default-header.jpg';
-	}
 
 	// Header image on page and single page is defined by featured image
 	if ( ( is_singular() || is_page() ) && ! is_front_page() ) {
