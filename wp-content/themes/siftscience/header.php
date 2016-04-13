@@ -22,18 +22,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'siftscience' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="wrap">
+		<div class="">
 			<div class="site-branding">
-				<a id="site-logo-link" href="/"><svg></svg></a>
+				<a id="site-logo-link" href="/siftscience/"><svg></svg></a>
 				<?php
 					if( function_exists( 'jetpack_the_site_logo' ) ){
 						jetpack_the_site_logo();
 					}
 
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+
 					<?php endif;
 				?>
 			</div><!-- .site-branding -->
@@ -48,16 +48,14 @@
 		</div>
 	</header><!-- #masthead -->
 	<div class="page-header">
-		<div id="header-left">
 			<?php
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 							<p><?php bloginfo('description'); ?> </p>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<h1><?php wp_title(); ?></h1>
 					<?php endif;
 			?>
-	</div>
 </div>
 
 

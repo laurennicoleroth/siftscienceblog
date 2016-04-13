@@ -635,24 +635,36 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+
+.main-navigation {
+	min-width: 585px;
+}
+
 .main-navigation, #user-links {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-  background: #FDFDFD;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2%;
+    padding: 0 0 0 2%;
 }
 
 #user-links {
 	float: right;
+  font-size: 14px;
+  height: 100%;
 }
 
 .main-navigation.toggled {
   border-bottom: 1px solid #EFEFEF;
 }
+
 .main-navigation .nav-menu {
   display: none;
 }
+
 .main-navigation ul, #user-links ul {
   list-style: none;
   margin: 0;
@@ -671,9 +683,11 @@ a:hover, a:focus, a:active {
 .main-navigation ul ul li, #user-links ul ul li {
   padding-left: 30px;
 }
+
 .main-navigation ul ul li:last-child a {
   border-bottom: 1px dashed #EFEFEF;
 }
+
 .main-navigation ul ul li a {
   border-top: 1px dashed #EFEFEF;
   font-size: 13px;
@@ -681,9 +695,11 @@ a:hover, a:focus, a:active {
   padding: 4px 15px;
   opacity: .8;
 }
+
 .main-navigation ul ul li ul {
   border-top: 1px dashed #EFEFEF;
 }
+
 .main-navigation ul ul li ul li:first-child a {
   border-top: 0;
 }
@@ -697,17 +713,19 @@ a:hover, a:focus, a:active {
   left: auto;
 }
 .main-navigation li {
-  position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
 }
 .main-navigation a, #user-links a {
-    display: block;
-    text-decoration: none;
-    color: #2d1f0f;
-    font-size: 1.3rem;
+    font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
     color: white;
-    padding: 8px 7px;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 10px 20px;
 }
 
 /* Small menu */
@@ -754,7 +772,6 @@ a:hover, a:focus, a:active {
   }
 
   .not-touch-device #site-navigation, .not-touch-device #user-links {
-    float: left;
     width: auto;
     margin-top: 17px;
     background: transparent;
@@ -1080,10 +1097,25 @@ body {
   background: white;
 }
 
-#masthead .site-branding {
-    width: 185px;
-    height: 61px;
+#masthead {
+	  -webkit-transition: background-color .5s,height .5s;
+    -moz-transition: background-color .5s,height .5s;
+    transition: background-color .5s,height .5s;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    height: 80px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+#masthead .site-branding {
+    margin-top: 12px;
+    position: relative;
+    height: 20px;
+    width: 130px;
 }
 
 #masthead .site-logo-link {
@@ -1133,6 +1165,7 @@ body {
   text-align: center;
   padding: 90px 15px 100px;
   border-bottom: 1px solid #EFEFEF;
+  background: #f7ba50;
 }
 
 .page-header h1 {
