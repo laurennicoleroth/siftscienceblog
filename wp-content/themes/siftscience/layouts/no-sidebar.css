@@ -1,0 +1,20 @@
+/*
+Theme Name: Siftscience
+Layout: No-Sidebar
+*/
+
+.content-area {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.site-main {
+  margin: 0 0 0 0;
+}
+.site-content .widget-area {
+  display: none;
+}
+.site-footer {
+  clear: both;
+  width: 100%;
+}
