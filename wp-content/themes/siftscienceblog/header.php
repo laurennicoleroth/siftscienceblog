@@ -148,4 +148,3 @@
 			</div> <!-- end .banner-container -->
 
 		</div> <!-- end .banner -->
-<div id="content" class="site-content">
