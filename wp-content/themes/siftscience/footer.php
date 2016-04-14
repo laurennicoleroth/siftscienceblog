@@ -10,11 +10,16 @@
 
   </div><!-- #content -->
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="site-info">
-      <?php printf( __( 'Powered by %s &amp; %s', 'siftscience' ), '<a href="http://wordpress.org/">WordPress</a>', '<a href="https://siftscience.com/">Sift Science Theme</a>' ); ?>
-    </div><!-- .site-info -->
-  </footer><!-- #colophon -->
+  <footer>
+    <div class="footer-container">
+      <div class="company-info">
+        <svg class="footer-logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer-logo"></use>
+        </svg>
+        <p>Copyright Sift Science, Inc. 2011-2016</p>
+        </div> <!-- end .company-info -->
+      </div> <!-- end .footer-container -->
+    </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
