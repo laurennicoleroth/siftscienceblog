@@ -3,7 +3,7 @@
  * @package Siftscience
  */
 ?>
-
+content
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 
@@ -18,18 +18,6 @@
 		<?php endif; ?>
 
 	<?php endif; ?>
-
-	<header class="entry-header">
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php siftscience_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
-		<?php siftscience_entry_subtitle(); ?>
-	</header><!-- .entry-header -->
 
 	<?php if ( 'post' != get_post_type() || 'aside' == get_post_format() ) : ?>
 

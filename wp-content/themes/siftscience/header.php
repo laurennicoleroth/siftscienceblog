@@ -131,16 +131,12 @@
 			    <?php
 						if ( is_front_page() ) : ?>
 							<h1><?php bloginfo( 'name' ); ?></h1>
-						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-						endif;
-
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
+							<?php $description = get_bloginfo( 'description', 'display' ); ?>
 							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-						<?php
-						endif; ?>
+						<?php else : ?>
+							<h1>Category</h1>
+						<?php endif;
+					?>
   			</div> <!-- end .headline -->
 			</div> <!-- end .banner-container -->
 		</div> <!-- end .banner -->
