@@ -12,6 +12,8 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+add_filter('show_admin_bar', '__return_false');
+
 /**
  * Get pluggable-by-translation Google fonts' URL
  */
