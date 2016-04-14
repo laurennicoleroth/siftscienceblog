@@ -130,10 +130,21 @@
 			<div class="banner">
 				<div class="banner-container">
   <div class="headline">
-    <h1>Welcome to Sift blog!</h1>
-    <p>Where online fraud fighting, engineering innovations,</p>
-    <p>industry insights, and startup life come together.</p>
+    <?php
+			if ( is_front_page() && is_home() ) : ?>
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php
+			endif;
+
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+			<?php
+			endif; ?>
   </div> <!-- end .headline -->
 </div>
 </div>
 
+<div id="content" class="site-content">
