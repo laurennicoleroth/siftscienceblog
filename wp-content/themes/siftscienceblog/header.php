@@ -124,27 +124,28 @@
 					mobile menu
 				</div>
 			</div>
-			</header>
-		<main>
+			</header> <!-- end header -->
 
-			<div class="banner">
-				<div class="banner-container">
-  <div class="headline">
-    <?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+<main>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-  </div> <!-- end .headline -->
-</div>
-</div>
+	<div class="banner">
+			<div class="banner-container">
+  			<div class="headline">
+			    <?php
+						if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+						endif;
+
+						$description = get_bloginfo( 'description', 'display' );
+						if ( $description || is_customize_preview() ) : ?>
+							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+						<?php
+						endif; ?>
+  			</div> <!-- end .headline -->
+			</div> <!-- end .banner-container -->
+		</div> <!-- end .banner -->
 
 <div id="content" class="site-content">
