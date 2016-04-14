@@ -12,24 +12,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+main
+</main>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+  <footer>
+    <div class="footer-container">
+      <div class="company-info">
+        <svg class="footer-logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer-logo"></use>
+        </svg>
+        <p>Copyright Sift Science, Inc. 2011-2016</p>
+        </div> <!-- end .company-info -->
+      </div> <!-- end .footer-container -->
+    </footer>
+  </body>
+</html>

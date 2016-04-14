@@ -124,7 +124,6 @@
 			</div>
 			</header> <!-- end header -->
 <main>
-
 	<div class="banner">
 			<div class="banner-container">
   			<div class="headline">
@@ -144,5 +143,4 @@
 						endif; ?>
   			</div> <!-- end .headline -->
 			</div> <!-- end .banner-container -->
-
 		</div> <!-- end .banner -->
