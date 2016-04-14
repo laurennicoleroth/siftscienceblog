@@ -53,6 +53,7 @@
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 							<p><?php bloginfo('description'); ?> </p>
+							<img alt="Sift Scientist" src="http://localhost:8888/siftscience/wp-content/themes/siftscience/images/SiftScientist.png">
 					<?php else : ?>
 						<h1><?php wp_title(); ?></h1>
 					<?php endif;

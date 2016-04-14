@@ -1247,12 +1247,14 @@ body {
 * Tablet adjustment
 */
 @media screen and (min-width: 760px) {
-  .page-header {
-
+  .page-header img {
+  	width: 350px;
   }
+
   .page-header .page-title {
     font-size: 32px;
     font-size: 3.2rem;
+    float: left;
   }
   .page-header .page-description {
     font-size: 18px;
