@@ -133,6 +133,7 @@
 							<h1><?php bloginfo( 'name' ); ?></h1>
 							<?php $description = get_bloginfo( 'description', 'display' ); ?>
 							<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+							<embed type="image/svg+xml" src="images/image.svg" />
 						<?php else : ?>
 							<h1>Category</h1>
 						<?php endif;
