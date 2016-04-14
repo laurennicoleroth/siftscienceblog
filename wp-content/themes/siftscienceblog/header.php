@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?> >
   <svg width="0" height="0" style="position:absolute">
 
     <symbol viewBox="0.3 0 21 19" id="icon-color-hexagon">
@@ -67,32 +67,73 @@
         </g>
         <path fill="#F16B2E" d="M15.7 21.2l-7.3-4.1-7.3 4.1v8.6l7.3 4.3 7.3-4.3"></path>
       </symbol>
+
+      <symbol viewBox="0 0 21 15" id="icon-envelope">
+      	<path d="M.9 1.5c.6.3 8.3 5.1 8.6 5.2.3.2.7.3 1 .3.4 0 .7-.1 1-.3.3-.2 8-4.9 8.6-5.3.5-.3 1-1.4 0-1.4H.8c-1 0-.5 1.1.1 1.5zm19.5 2.6c-.6.4-8.5 5-8.9 5.2-.4.2-.7.3-1.1.3-.4 0-.7 0-1.1-.3C9 9.1 1.2 4.5.5 4.1c-.4-.2-.5.1-.5.3v9.5c0 .5.8 1.1 1.3 1.1h18.3c.5 0 1.4-.6 1.4-1.1V4.4c0-.2-.1-.5-.6-.3z"></path>
+      </symbol>
   </svg>
 
-    <div class="sift-edu sift-edu-sublanding resources-page"><header class="light"><a href="/" class="sift-brand"><svg class="color-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use></svg><svg class="color-hexagon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-hexagon"></use></svg><svg class="monochrome-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-logo"></use></svg><svg class="monochrome-hexagon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use></svg></a><nav><li><span>Products</span><div class="menu-dropdown"><a href="/chargebacks">Chargeback Prevention</a><a href="/account-abuse">Account Abuse Prevention</a><a href="/device-fingerprinting">Device Fingerprinting</a><hr><a href="/how-sift-works">How It Works</a></div></li>&nbsp;<li><span>Industries</span><div class="menu-dropdown"><a href="/digital-cash">Digital Cash</a><a href="/e-commerce">E-Commerce</a><a href="/on-demand">On Demand</a><a href="/online-marketplace">Online Marketplace</a><a href="/payment-gateway">Payment Gateway</a><a href="/travel">Travel</a></div></li>&nbsp;<li><span>pricing</span><div class="menu-dropdown"><a href="/pricing#chargebacks">Chargeback Prevention</a><a href="/pricing#account-abuse">Account Abuse Prevention</a><a href="/device-fingerprinting#prices">Device Fingerprinting</a></div></li>&nbsp;<li><a href="/resources">resources</a><div class="menu-dropdown"><a href="/resources">Videos, eBooks &amp; More</a><a href="/sift-edu">Sift EDU</a><a href="/case-studies">Case Studies</a></div></li>&nbsp;<li><a href="/developers/overview">developers</a><div class="menu-dropdown"><a href="/resources/guides">Integration Guides</a><a href="/resources/tutorials">Tutorials</a><a href="/developers/docs">API References</a><a href="/developers/overview#client-libraries">Client Libraries</a></div></li>&nbsp;<li><span>contact</span><div class="menu-dropdown"><a href="/contact-sales">Contact Sales</a><a href="/contact-support">Contact Support</a><a href="/partners/sift-for-partners">For Partners</a><a href="https://support.siftscience.com">Visit our Help Center</a></div></li></nav><div class="utility-nav"><span class="console-login"><span data-reactid=".0"><span data-reactid=".0.$=10"><a href="/contact-sales" class="request-demo" data-reactid=".0.$=10.0"><span class="SvgIcon envelope" data-reactid=".0.$=10.0.0"><svg class="icon-envelope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use></svg></span><span data-reactid=".0.$=10.0.1">Request demo</span></a><a href="/console/login" data-reactid=".0.$=10.1">log in</a><a href="/signup" class="signup" data-reactid=".0.$=10.2">sign up</a></span></span></span><div class="veggieburger-wrap"><svg class="veggieburger"><rect y="0" width="24" height="4"></rect><rect y="8" width="24" height="4"></rect><rect y="16" width="24" height="4"></rect></svg></div></div><div class="mobile-menu"><div class="mobile-menu-container"><div class="menu-set"><h5>Products</h5><ul><li><a href="/chargebacks">Chargeback Prevention</a></li><li><a href="/account-abuse">Account Abuse Prevention</a></li><li><a href="/device-fingerprinting">Device Fingerprinting</a></li><li><a href="/how-sift-works">How It Works</a></li></ul></div><div class="menu-set"><h5>Pricing</h5><ul><li><a href="/pricing#chargebacks">Chargeback Prevention</a></li><li><a href="/pricing#account-abuse">Account Abuse Prevention</a></li><li><a href="/device-fingerprinting#prices">Device Fingerprinting</a></li></ul></div><div class="menu-set"><h5>Industries</h5><ul><li><a href="/digital-cash">Digital Cash</a></li><li><a href="/e-commerce">E-Commerce</a></li><li><a href="/on-demand">On Demand</a></li><li><a href="/online-marketplace">Online Marketplace</a></li><li><a href="/payment-gateway">Payment Gateway</a></li><li><a href="/travel">Travel</a></li></ul></div><div class="menu-set"><h5>Resources</h5><ul><li><a href="/resources">Videos, eBooks &amp; More</a></li><li><a href="/sift-edu">Sift EDU</a></li><li><a href="/case-studies">Case Studies</a></li></ul></div><div class="menu-set"><h5>Developers</h5><ul><li><a href="/resources/guides">Integration Guides</a></li><li><a href="/resources/tutorials">Tutorials</a></li><li><a href="/developers/docs">API References</a></li><li><a href="/developers/overview#client-libraries">Client Libraries</a></li></ul></div><div class="menu-set"><h5>Contact</h5><ul><li><a href="/contact-sales">Contact Sales</a></li><li><a href="/contact-support">Contact Support</a></li><li><a href="/partners/sift-for-partners">For Partners</a></li><li><a href="https://support.siftscience.com">Support Center</a></li></ul></div><hr><div class="menu-set"><ul><li><a href="/about">About</a></li><li><a href="/jobs">Jobs</a></li></ul></div><div class="menu-set"><ul><li><a href="http://blog.siftscience.com">Blog</a></li><li><a href="mailto:info@siftscience.com">Email Us</a></li></ul></div><span class="console-login"><span data-reactid=".1"><span data-reactid=".1.$=10"><a href="/contact-sales" class="request-demo" data-reactid=".1.$=10.0"><span class="SvgIcon envelope" data-reactid=".1.$=10.0.0"><svg class="icon-envelope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use></svg></span><span data-reactid=".1.$=10.0.1">Request demo</span></a><a href="/console/login" data-reactid=".1.$=10.1">log in</a><a href="/signup" class="signup" data-reactid=".1.$=10.2">sign up</a></span></span></span></div></div></header><main><div class="banner"><div class="banner-container">
+  <div class="sift-edu sift-edu-sublanding resources-page">
+  	<header class="light">
+  		<a href="/" class="sift-brand">
+  			<svg class="color-logo">
+  				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
+  			</svg>
+  			<svg class="color-hexagon">
+  				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-hexagon"></use>
+  			</svg>
+  			<svg class="monochrome-logo">
+  				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-logo"></use></svg>
+  			<svg class="monochrome-hexagon">
+  				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use>
+  			</svg>
+			</a>
+
+			<nav>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav>
+
+			<div class="utility-nav">
+				<span class="console-login">
+					<span data-reactid=".0">
+						<span data-reactid=".0.$=10">
+							<a href="/contact-sales" class="request-demo" data-reactid=".0.$=10.0">
+								<span class="SvgIcon envelope" data-reactid=".0.$=10.0.0">
+									<svg class="icon-envelope">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use>
+									</svg>
+								</span>
+								<span data-reactid=".0.$=10.0.1">Request demo</span>
+							</a>
+							<a href="/console/login" data-reactid=".0.$=10.1">log in</a>
+							<a href="/signup" class="signup" data-reactid=".0.$=10.2">sign up</a>
+						</span>
+					</span>
+				</span>
+
+				<div class="veggieburger-wrap">
+					<svg class="veggieburger">
+						<rect y="0" width="24" height="4"></rect>
+						<rect y="8" width="24" height="4"></rect>
+						<rect y="16" width="24" height="4"></rect>
+					</svg>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<div class="mobile-menu-container">
+					mobile menu
+				</div>
+			</div>
+			</header>
+		<main>
+
+			<div class="banner">
+				<div class="banner-container">
   <div class="headline">
     <h1>Welcome to Sift blog!</h1>
     <p>Where online fraud fighting, engineering innovations,</p>
     <p>industry insights, and startup life come together.</p>
-
   </div> <!-- end .headline -->
-</div></div>
+</div>
+</div>
 
-    <div class="chapters landing-page">
-      <div class="chapter orange">
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="company-info">
-        <svg class="footer-logo">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer-logo"></use>
-        </svg>
-        <p>Copyright Sift Science, Inc. 2011-2016</p>
-        </div> <!-- end .company-info -->
-      </div> <!-- end .footer-container -->
-    </footer>
-  </body>
-</html>
