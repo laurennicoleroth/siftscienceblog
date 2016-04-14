@@ -295,15 +295,6 @@ td,th {
     font-style: italic;
 }
 
-.home-page .homepage-hero .sharrow,.home-page .sift-prediction .mobile-prediction-blurb>*,.home-page .prediction-img-container .bad-label {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0
-}
-
 .label-success,.label-error,.label-danger,.label-neutral {
     border-radius: 4px;
     display: inline-block;
@@ -2038,7 +2029,7 @@ ul {
     width: 100%
 }
 
-.landing-page .chapter {
+/*.landing-page .chapter {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
@@ -2049,9 +2040,9 @@ ul {
 
 .landing-page .chapter.ghost {
     border: none
-}
+}*/
 
-.landing-page .chapter a {
+/*.landing-page .chapter a {
     display: block
 }
 
@@ -2060,9 +2051,9 @@ ul {
     height: 190px;
     margin: 0 auto;
     text-align: center
-}
+}*/
 
-.landing-page .chapter [data-picture]>span,.landing-page .chapter .icon>img>span {
+/*.landing-page .chapter [data-picture]>span,.landing-page .chapter .icon>img>span {
     display: inline-block;
     vertical-align: middle
 }
@@ -2080,9 +2071,9 @@ ul {
     border-top: none;
     height: 210px;
     padding: 20px
-}
+}*/
 
-.landing-page .chapter p {
+/*.landing-page .chapter p {
     color: #999;
     line-height: 1.6
 }
@@ -2090,7 +2081,7 @@ ul {
 .landing-page .chapter h3 {
     margin: 0 0 10px
 }
-
+*/
 @media (max-width: 992px) and (min-width: 768px) {
     .landing-page {
         width:94%;
@@ -2099,7 +2090,7 @@ ul {
 
 @media (max-width: 767px) {
     .landing-page .chapter {
-        display:block;
+        display: block;
         margin: 20px auto;
         width: 90%
     }

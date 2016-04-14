@@ -75,7 +75,7 @@
 
   <div class="sift-edu sift-edu-sublanding resources-page">
   	<header class="light">
-  		<a href="/" class="sift-brand">
+  		<a href="/siftscience" class="sift-brand">
   			<svg class="color-logo">
   				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
   			</svg>
@@ -125,7 +125,6 @@
 				</div>
 			</div>
 			</header> <!-- end header -->
-
 <main>
 
 	<div class="banner">
@@ -147,6 +146,6 @@
 						endif; ?>
   			</div> <!-- end .headline -->
 			</div> <!-- end .banner-container -->
-		</div> <!-- end .banner -->
 
+		</div> <!-- end .banner -->
 <div id="content" class="site-content">
