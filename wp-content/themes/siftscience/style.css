@@ -854,7 +854,7 @@ a.flat.cta,span.flat.cta {
 }
 
 .contact-form .banner,.custom-requests,.guides-landing .banner,.guides .banner,.references-landing .banner,.sift-edu-sublanding .banner,.sift-edu-chapter .banner,.sift-edu-landing .banner,.tutorials-landing .banner {
-    height: 380px
+    height: 380px;
 }
 
 .contact-form .banner .banner-container,.custom-requests .banner-container,.guides-landing .banner .banner-container,.guides .banner .banner-container,.references-landing .banner .banner-container,.sift-edu-sublanding .banner .banner-container,.sift-edu-chapter .banner .banner-container,.sift-edu-landing .banner .banner-container,.tutorials-landing .banner .banner-container {
@@ -889,10 +889,19 @@ a.flat.cta,span.flat.cta {
 
 .contact-form .banner .headline,.custom-requests .headline,.guides-landing .banner .headline,.guides .banner .headline,.references-landing .banner .headline,.sift-edu-sublanding .banner .headline,.sift-edu-chapter .banner .headline,.sift-edu-landing .banner .headline,.tutorials-landing .banner .headline {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     position: relative;
-    width: calc(100% - 400px - 40px);
+    /*width: calc(100% - 400px - 40px);*/
     z-index: 10
+}
+
+#header-left {
+  float: left;
+}
+
+#header-right {
+  float: right;
+  width: 44%;
 }
 
 @media (max-width: 992px) {
