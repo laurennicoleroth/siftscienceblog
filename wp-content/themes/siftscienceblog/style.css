@@ -19196,10 +19196,24 @@ article p {
     color: #608a9e;
 }
 
-article .entry-meta {
-    padding-bottom: 10px;
+article .left {
+    float: left;
+    width: 55%;
 }
 
-article .featured-image {
+article .right {
+    float: right;
+    width: 45%;
+}
 
+article img {
+    max-width: 75%;
+    height: auto;
+    float: right;
+}
+
+article:after {
+    content:"";
+    display: table;
+    clear: both;
 }
