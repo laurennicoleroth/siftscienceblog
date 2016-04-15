@@ -64,6 +64,10 @@
         </g>
         <path fill="#F16B2E" d="M15.7 21.2l-7.3-4.1-7.3 4.1v8.6l7.3 4.3 7.3-4.3"></path>
       </symbol>
+
+      <symbol viewBox="0 0 21 15" id="icon-envelope">
+        <path d="M.9 1.5c.6.3 8.3 5.1 8.6 5.2.3.2.7.3 1 .3.4 0 .7-.1 1-.3.3-.2 8-4.9 8.6-5.3.5-.3 1-1.4 0-1.4H.8c-1 0-.5 1.1.1 1.5zm19.5 2.6c-.6.4-8.5 5-8.9 5.2-.4.2-.7.3-1.1.3-.4 0-.7 0-1.1-.3C9 9.1 1.2 4.5.5 4.1c-.4-.2-.5.1-.5.3v9.5c0 .5.8 1.1 1.3 1.1h18.3c.5 0 1.4-.6 1.4-1.1V4.4c0-.2-.1-.5-.6-.3z"></path>
+      </symbol>
   </svg>
 
     <div class="sift-edu sift-edu-sublanding resources-page">
@@ -129,6 +133,11 @@
 					endif; ?>
   	</div> <!-- end .headline -->
 	</div>
+</div>
+<div id="bar-nav">
+  <nav>
+    bar-nav
+  </nav>
 </div>
 
 

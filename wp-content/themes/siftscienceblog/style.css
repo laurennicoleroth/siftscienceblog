@@ -19138,3 +19138,35 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
     opacity: 1;
     pointer-events: auto
 }
+
+#bar-nav {
+    background: #eee;
+    width: 100%;
+}
+
+#bar-nav nav {
+    margin: 0px auto;
+    max-width: 1200px;
+    text-align: justify;
+    width: 90%;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: justify;
+    width: 90%;
+}
+
+.entry-title a {
+    color: #555555;
+    font-weight: 300;
+}
+
+article {
+    border-bottom: 1px solid #cccccc;
+}
+
+article p {
+    color: #608a9e;
+}

@@ -10,10 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 		<?php
 			if ( is_single() ) {
-				 the_title( '<h1 class="entry-title">', '</h1>' );
+				  the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
@@ -27,18 +26,7 @@
 
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'siftscienceblog' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'siftscienceblog' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat iaculis semper. Integer imperdiet risus id quam varius sollicitudin sit amet aliquet diam. Mauris vitae erat a urna euismod tincidunt eu non risus. Quisque in ipsum ac sapien gravida rutrum eget a nisi. Etiam dignissim lectus eget vulputate hendrerit. Nulla ac efficitur risus, nec mollis purus. Pellentesque vitae sagittis nunc, ac aliquet purus. Integer quis nunc magna. Nullam laoreet nibh orci, ac interdum urna scelerisque at....</p>
 	</div><!-- .entry-content -->
 
 
