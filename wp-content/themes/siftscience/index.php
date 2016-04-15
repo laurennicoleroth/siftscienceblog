@@ -15,6 +15,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 
+			<?php $count_posts = wp_count_posts(); ?>
 			<?php siftscience_paging_nav_newer(); ?>
 
 			<?php /* Start the Loop */ ?>
