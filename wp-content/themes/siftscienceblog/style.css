@@ -19142,6 +19142,7 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
 #bar-nav {
     background: #eee;
     width: 100%;
+    padding: 20px 0px;
 }
 
 #bar-nav nav {
@@ -19165,8 +19166,13 @@ main {
 
 article {
     border-bottom: 1px solid #cccccc;
+    padding: 40px 0px;
 }
 
 article p {
     color: #608a9e;
+}
+
+article .entry-meta {
+    padding-bottom: 10px;
 }

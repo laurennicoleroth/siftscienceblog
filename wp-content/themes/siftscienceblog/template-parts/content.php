@@ -19,7 +19,8 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php siftscienceblog_posted_on(); ?>
+			<?php //siftscienceblog_posted_on(); ?>
+			<span><strong>April 05, 2016</strong> by Yoav Schatzberg</span>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
