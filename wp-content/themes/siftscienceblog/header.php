@@ -112,31 +112,20 @@
     				<div class="menu-set"><h5>Products</h5><ul><li><a href="/chargebacks">Chargeback Prevention</a></li><li><a href="/account-abuse">Account Abuse Prevention</a></li><li><a href="/device-fingerprinting">Device Fingerprinting</a></li><li><a href="/how-sift-works">How It Works</a></li></ul></div><div class="menu-set"><h5>Pricing</h5><ul><li><a href="/pricing#chargebacks">Chargeback Prevention</a></li><li><a href="/pricing#account-abuse">Account Abuse Prevention</a></li><li><a href="/device-fingerprinting#prices">Device Fingerprinting</a></li></ul></div><div class="menu-set"><h5>Industries</h5><ul><li><a href="/digital-cash">Digital Cash</a></li><li><a href="/e-commerce">E-Commerce</a></li><li><a href="/on-demand">On Demand</a></li><li><a href="/online-marketplace">Online Marketplace</a></li><li><a href="/payment-gateway">Payment Gateway</a></li><li><a href="/travel">Travel</a></li></ul></div><div class="menu-set"><h5>Resources</h5><ul><li><a href="/resources">Videos, eBooks &amp; More</a></li><li><a href="/sift-edu">Sift EDU</a></li><li><a href="/case-studies">Case Studies</a></li></ul></div><div class="menu-set"><h5>Developers</h5><ul><li><a href="/resources/guides">Integration Guides</a></li><li><a href="/resources/tutorials">Tutorials</a></li><li><a href="/developers/docs">API References</a></li><li><a href="/developers/overview#client-libraries">Client Libraries</a></li></ul></div><div class="menu-set"><h5>Contact</h5><ul><li><a href="/contact-sales">Contact Sales</a></li><li><a href="/contact-support">Contact Support</a></li><li><a href="/partners/sift-for-partners">For Partners</a></li><li><a href="https://support.siftscience.com">Support Center</a></li></ul></div><hr><div class="menu-set"><ul><li><a href="/about">About</a></li><li><a href="/jobs">Jobs</a></li></ul></div><div class="menu-set"><ul><li><a href="http://blog.siftscience.com">Blog</a></li><li><a href="mailto:info@siftscience.com">Email Us</a></li></ul></div><span class="console-login"><span data-reactid=".1"><span data-reactid=".1.$=10"><a href="/contact-sales" class="request-demo" data-reactid=".1.$=10.0"><span class="SvgIcon envelope" data-reactid=".1.$=10.0.0"><svg class="icon-envelope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use></svg></span><span data-reactid=".1.$=10.0.1">Request demo</span></a><a href="/console/login" data-reactid=".1.$=10.1">log in</a><a href="/signup" class="signup" data-reactid=".1.$=10.2">sign up</a></span></span></span></div></div>
 
     			</header>
-  <!-- <main> -->
     <div class="banner"><div class="banner-container">
   		<div class="headline">
-    		<!-- <h1>Welcome to Sift blog!</h1>
-    		<p>Where online fraud fighting, engineering innovations,</p>
-    		<p>industry insights, and startup life come together.</p>
-    		<img src=""/> -->
-    		<?php
+        <?php
+          $description = get_bloginfo( 'description', 'display' );
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-					endif;
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-					<?php
-					endif; ?>
+            <p class="site-description"><?php  echo $description; /* WPCS: xss ok. */ ?></p>
+					<?php endif;?>
   	</div> <!-- end .headline -->
 	</div>
 </div>
 <div id="bar-nav">
   <nav>
-    bar-nav
+    <?php wp_nav_menu( array( 'theme_location' => 'tags-menu' ) ); ?>
   </nav>
 </div>
 

@@ -151,3 +151,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function register_tags_menu() {
+  register_nav_menu('tags-menu',__( 'Tags Menu' ));
+}
+add_action( 'init', 'register_tags_menu' );

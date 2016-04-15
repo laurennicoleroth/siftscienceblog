@@ -863,17 +863,15 @@ a.flat.cta,span.flat.cta {
 }
 
 .contact-form .banner,.custom-requests,.guides-landing .banner,.guides .banner,.references-landing .banner,.sift-edu-sublanding .banner,.sift-edu-chapter .banner,.sift-edu-landing .banner,.tutorials-landing .banner {
-    height: 380px
+    height: 350px
 }
 
-.contact-form .banner .banner-container,.custom-requests .banner-container,.guides-landing .banner .banner-container,.guides .banner .banner-container,.references-landing .banner .banner-container,.sift-edu-sublanding .banner .banner-container,.sift-edu-chapter .banner .banner-container,.sift-edu-landing .banner .banner-container,.tutorials-landing .banner .banner-container {
+ .banner .banner-container {
     height: 100%;
     margin: 0 auto;
     max-width: 1200px;
-    padding-left: 80px;
-    padding-right: 40px;
     position: relative;
-    width: 100%
+    width: 90%
 }
 
 .contact-form .banner [data-picture],.custom-requests [data-picture],.guides-landing .banner [data-picture],.guides .banner [data-picture],.references-landing .banner [data-picture],.sift-edu-sublanding .banner [data-picture],.sift-edu-chapter .banner [data-picture],.sift-edu-landing .banner [data-picture],.tutorials-landing .banner [data-picture],.contact-form .banner .banner-img,.custom-requests .banner-img,.guides-landing .banner .banner-img,.guides .banner .banner-img,.references-landing .banner .banner-img,.sift-edu-sublanding .banner .banner-img,.sift-edu-chapter .banner .banner-img,.sift-edu-landing .banner .banner-img,.tutorials-landing .banner .banner-img {
@@ -12386,6 +12384,10 @@ header {
     z-index: 1000
 }
 
+header .page-title {
+    color: white;
+}
+
 header a {
     display: inline-block;
     vertical-align: middle;
@@ -12445,8 +12447,7 @@ header li {
 header li>span,header li>a {
     cursor: pointer;
     display: block;
-    margin-top: 10px;
-    padding: 10px 10px 20px;
+    padding: 0px 8%;
 }
 
 header li>span {
@@ -13110,7 +13111,7 @@ header.push+main {
 
 header li>span,header li>a,header .console-login {
     color: #555555;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     text-transform: uppercase
 }
@@ -19152,6 +19153,28 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
     width: 90%;
 }
 
+#bar-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    position: relative;
+}
+
+#bar-nav li a {
+    text-transform: uppercase;
+    color: #608a9e;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0px 20px;
+    border-left: 1px solid #608a9e;
+}
+
+#bar-nav li.menu-item-355 a {
+    padding-left: 0;
+    border-left: none;
+}
+
+
 main {
     margin: 0 auto;
     max-width: 1200px;
@@ -19175,4 +19198,8 @@ article p {
 
 article .entry-meta {
     padding-bottom: 10px;
+}
+
+article .featured-image {
+
 }

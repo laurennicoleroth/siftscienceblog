@@ -19,15 +19,23 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php //siftscienceblog_posted_on(); ?>
-			<span><strong>April 05, 2016</strong> by Yoav Schatzberg</span>
+			<span><?php the_date('F d, Y', '<strong>', '</strong>'); ?> by <?php the_author(); ?></span>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
 
 
 	<div class="entry-content">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat iaculis semper. Integer imperdiet risus id quam varius sollicitudin sit amet aliquet diam. Mauris vitae erat a urna euismod tincidunt eu non risus. Quisque in ipsum ac sapien gravida rutrum eget a nisi. Etiam dignissim lectus eget vulputate hendrerit. Nulla ac efficitur risus, nec mollis purus. Pellentesque vitae sagittis nunc, ac aliquet purus. Integer quis nunc magna. Nullam laoreet nibh orci, ac interdum urna scelerisque at....</p>
+		<div class="post-excerpt">
+			<p><?php the_excerpt(); ?></p>
+		</div>
+		<div class="featured-image">
+			<?php
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				  the_post_thumbnail();
+				}
+			?>
+		</div>
 	</div><!-- .entry-content -->
 
 
