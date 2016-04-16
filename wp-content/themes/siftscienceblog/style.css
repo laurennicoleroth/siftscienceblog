@@ -749,50 +749,12 @@ a.flat.cta,span.flat.cta {
     width: 80px
 }
 
-.hubspot-landing-page .webinar-takeaways .section-container .blue.on-dark.section-header svg,.products-page .overview .section-container .blue.on-dark.section-header svg,.products-page .how-technology-works .section-container .blue.on-dark.section-header svg,.use-cases .examples .section-container .blue.on-dark.section-header svg,.api-docs-page .docs-container .blue.on-dark.section-header svg,.device-fingerprinting-explanation .blue.on-dark.section-header svg,.device-fingerprinting-how-to>div .blue.on-dark.section-header svg,.device-fingerprinting-pricing .blue.on-dark.section-header svg,.features-page .move-faster-container .blue.on-dark.section-header svg,.features-page .multiple-uses-container .blue.on-dark.section-header svg,.features-page .formulas-container .blue.on-dark.section-header svg,.features-page .signals-library-container .blue.on-dark.section-header svg,.features-page .console .blue.on-dark.section-header svg,.home-page .sift-effectiveness-stats .blue.on-dark.section-header svg,.home-page .sift-science-way .way-container .blue.on-dark.section-header svg,.home-page .sift-prediction .prediction-container .blue.on-dark.section-header svg,.home-page .sift-automation .blue.on-dark.section-header svg,.home-page .sift-visualize .visualize-container .blue.on-dark.section-header svg,.hubspot-landing-page section .section-container .blue.on-dark.section-header svg,.focus-pages .focus-page-content .blue.on-dark.section-header svg,.pricing-page .use-cases-container .blue.on-dark.section-header svg,.pricing-page .plan-comparison .blue.on-dark.section-header svg,.products-page .subnav .section-container .blue.on-dark.section-header svg,.products-page section .section-container .blue.on-dark.section-header svg,.signals-stories .blue.on-dark.section-header svg,.use-cases .sift-solutions .section-container .blue.on-dark.section-header svg,.use-cases .use-case-overview .section-container .blue.on-dark.section-header svg,.use-cases .industry-specific .section-container .blue.on-dark.section-header svg,.device-fingerprinting .blue.on-dark.q-and-a-header svg,.pricing-page .blue.on-dark.q-and-a-header svg,.device-fingerprinting-documentation>div .blue.on-dark.section-header svg,.how-it-works .integrated-data .blue.on-dark.section-header svg,.how-it-works .labeling .blue.on-dark.section-header svg {
-    border-color: #43b4e2;
-    fill: #43b4e2
-}
-
 @media (max-width: 992px) {
 
 }
 
 @media (max-width: 767px) {
 
-}
-
-@media (max-width: 767px) {
-    .contact-form .banner,.custom-requests,.guides-landing .banner,.guides .banner,.references-landing .banner,.sift-edu-sublanding .banner,.sift-edu-chapter .banner,.sift-edu-landing .banner,.tutorials-landing .banner {
-        /*height:auto;
-        padding: 60px 40px 40px;
-*/    }
-
-    .contact-form .banner .banner-container,.custom-requests .banner-container,.guides-landing .banner .banner-container,.guides .banner .banner-container,.references-landing .banner .banner-container,.sift-edu-sublanding .banner .banner-container,.sift-edu-chapter .banner .banner-container,.sift-edu-landing .banner .banner-container,.tutorials-landing .banner .banner-container {
-        /*background-position: center bottom;
-        padding: 40px 0*/
-    }
-
-    .contact-form .banner .banner-container:before,.custom-requests .banner-container:before,.guides-landing .banner .banner-container:before,.guides .banner .banner-container:before,.references-landing .banner .banner-container:before,.sift-edu-sublanding .banner .banner-container:before,.sift-edu-chapter .banner .banner-container:before,.sift-edu-landing .banner .banner-container:before,.tutorials-landing .banner .banner-container:before,.contact-form .banner .banner-container:after,.custom-requests .banner-container:after,.guides-landing .banner .banner-container:after,.guides .banner .banner-container:after,.references-landing .banner .banner-container:after,.sift-edu-sublanding .banner .banner-container:after,.sift-edu-chapter .banner .banner-container:after,.sift-edu-landing .banner .banner-container:after,.tutorials-landing .banner .banner-container:after {
-        /*display: none*/
-    }
-
-    .contact-form .banner .headline,.custom-requests .headline,.guides-landing .banner .headline,.guides .banner .headline,.references-landing .banner .headline,.sift-edu-sublanding .banner .headline,.sift-edu-chapter .banner .headline,.sift-edu-landing .banner .headline,.tutorials-landing .banner .headline {
-        /*display: block;
-        margin-bottom: 20px;
-        text-align: center;
-        width: 100%*/
-    }
-
-    .contact-form .banner [data-picture],.custom-requests [data-picture],.guides-landing .banner [data-picture],.guides .banner [data-picture],.references-landing .banner [data-picture],.sift-edu-sublanding .banner [data-picture],.sift-edu-chapter .banner [data-picture],.sift-edu-landing .banner [data-picture],.tutorials-landing .banner [data-picture],.contact-form .banner .banner-img,.custom-requests .banner-img,.guides-landing .banner .banner-img,.guides .banner .banner-img,.references-landing .banner .banner-img,.sift-edu-sublanding .banner .banner-img,.sift-edu-chapter .banner .banner-img,.sift-edu-landing .banner .banner-img,.tutorials-landing .banner .banner-img {
-        /*display: block;
-        margin: 0 auto;
-        max-width: 400px;
-        padding-top: 20px;
-        position: relative;
-        text-align: center;
-        width: 80%*/
-    }
 }
 
 @media (max-width: 400px) {
@@ -12211,7 +12173,8 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1000
+    z-index: 1000;
+    padding-top: 25px;
 }
 
 header .page-title {
@@ -12377,7 +12340,7 @@ header .menu-dropdown a {
 }
 
 header .sift-brand {
-    margin-top: -8px;
+    margin-top: -32px;
     position: relative;
     height: 20px;
     width: 130px
@@ -13495,328 +13458,7 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
     }
 }
 
-@media (max-width: 992px) {
-    .pricing-page .volume-discounts-section {
-        padding-top:20px
-    }
 
-    .pricing-page .volume-discounts-section h2 {
-        padding: 0 5%
-    }
-
-    .pricing-page .volume-discounts-section .volume-price-list {
-        margin-top: 30px;
-        padding: 0 5%
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row {
-        height: 40px
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span {
-        width: 40%
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span:first-child {
-        margin-right: 20%
-    }
-
-    .flexbox .pricing-page .q-and-a ul {
-        height: auto
-    }
-
-    .pricing-page .use-cases .product-icon {
-        display: block;
-        margin: 0 auto 20px;
-        width: 100px
-    }
-
-    .pricing-page .use-cases .blurb {
-        display: block;
-        padding: 0;
-        text-align: center;
-        width: 100%
-    }
-}
-
-@media (max-width: 950px) and (min-width: 769px) {
-    .pricing-page .volume-discounts-section .vol-price-row span {
-        width:45%
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span:first-child {
-        margin-right: 10%
-    }
-
-    .pricing-page .volume-discounts-section .volume-price-list {
-        padding: 0 0 0 5%
-    }
-}
-
-@media (max-width: 767px) {
-    .pricing-page tr:nth-child(2n) .feature-lists tr:nth-child(2n+1) {
-        background:#ededed
-    }
-
-    .pricing-page .plan-comparison ul li {
-        margin: 0 0 80px 0
-    }
-
-    .pricing-page .plan-comparison ul li>svg {
-        margin-top: 0
-    }
-
-    .pricing-page .volume-discounts {
-        position: relative;
-        top: 0
-    }
-
-    .pricing-page .volume-discounts-section {
-        padding-bottom: 40px
-    }
-
-    .pricing-page .volume-discounts-section h2 {
-        margin: 10px 0;
-        text-align: center
-    }
-
-    .pricing-page .volume-discounts-section .volume-price-list {
-        margin-bottom: 20px;
-        width: 100%
-    }
-
-    .pricing-page .volume-discounts-section .price-calculator {
-        width: 100%
-    }
-
-    .pricing-page .volume-discounts-section [data-picture] {
-        display: none
-    }
-
-    .pricing-page .use-cases h3 {
-        height: 20px
-    }
-
-    .pricing-page .use-cases .headlines {
-        margin: 40px 0 60px
-    }
-
-    .pricing-page .use-cases .product {
-        margin-right: 5%;
-        width: 45%
-    }
-
-    .pricing-page .use-cases .product:last-child {
-        margin-left: 5%;
-        margin-right: 0
-    }
-
-    .pricing-page .use-cases .separator,.pricing-page .use-cases p {
-        display: none
-    }
-}
-
-@media (max-width: 480px) {
-    .pricing-page .more-details span {
-        display:block;
-        margin: 10px 0 0
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span {
-        font-size: 14px
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span:first-child {
-        margin-right: 4%;
-        width: 46%
-    }
-
-    .pricing-page .volume-discounts-section .vol-price-row span:last-child {
-        width: 50%
-    }
-
-    .flexbox .pricing-page .q-and-a ul li {
-        padding: 0
-    }
-
-    .pricing-page .use-cases-container {
-        padding: 40px 20px 60px
-    }
-
-    .pricing-page .use-cases .headlines {
-        margin: 20px 0 80px
-    }
-
-    .pricing-page .use-cases .product {
-        padding: 20px 5px;
-        vertical-align: top
-    }
-}
-
-.pricing-plans {
-    padding: 40px 0;
-    position: relative;
-    z-index: 5
-}
-
-.pricing-plans.chargebacks .plan-lite h2 {
-    background: #f8c061
-}
-
-.pricing-plans.chargebacks .plan-lite .price {
-    color: #f8c061
-}
-
-.pricing-plans.chargebacks .plan-premium h2 {
-    background: #f78a49
-}
-
-.pricing-plans.chargebacks .plan-premium .price {
-    color: #f78a49
-}
-
-.pricing-plans.account-abuse .plan-lite h2 {
-    background: #7bd969
-}
-
-.pricing-plans.account-abuse .plan-lite .price {
-    color: #7bd969
-}
-
-.pricing-plans.account-abuse .plan-premium h2 {
-    background: #06b769
-}
-
-.pricing-plans.account-abuse .plan-premium .price {
-    color: #06b769
-}
-
-.pricing-plans .plans-container {
-    background: #fff;
-    margin: 0 auto 20px;
-    max-width: 1200px;
-    width: 90%
-}
-
-.pricing-plans h2 {
-    color: #fff;
-    font: 500 16px ProximaNova,"Helvetica Neue",Helvetica,Arial;
-    padding: 10px 0;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase
-}
-
-.pricing-plans .plan {
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    color: #aaaaaa;
-    height: 275px;
-    overflow: hidden;
-    position: relative
-}
-
-.pricing-plans .plan.plan-lite {
-    margin-right: 3%;
-    max-width: 250px;
-    text-align: center;
-    width: 22%
-}
-
-.pricing-plans .plan.plan-premium {
-    width: 72%
-}
-
-.pricing-plans .plan.plan-premium .unit-price {
-    display: inline-block;
-    padding: 0 10px;
-    width: 28%
-}
-
-.pricing-plans .plan-content {
-    overflow: hidden;
-    padding: 30px 0
-}
-
-.pricing-plans .price-header {
-    font-weight: 600;
-    text-transform: uppercase
-}
-
-.pricing-plans .price {
-    font: 200 44px ProximaNova,"Helvetica Neue",Helvetica,Arial
-}
-
-.pricing-plans .price em {
-    font: normal 600 60px ProximaNova,"Helvetica Neue",Helvetica,Arial
-}
-
-.pricing-plans .unit-price {
-    text-align: center
-}
-
-.pricing-plans .unit {
-    color: #555555;
-    margin-bottom: 20px
-}
-
-.pricing-plans .plan-features {
-    border-left: 1px solid #c4c4c4;
-    color: #555555;
-    display: inline-block;
-    padding-left: 30px;
-    vertical-align: top;
-    width: 72%
-}
-
-.pricing-plans li {
-    font-size: 14px;
-    padding: 20px 0 0 30px;
-    text-align: left;
-    width: 50%
-}
-
-.pricing-plans li span {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px
-}
-
-.pricing-plans svg {
-    margin-left: -25px
-}
-
-.pricing-plans svg.thin-check {
-    margin-top: -2px
-}
-
-.pricing-plans ul {
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column wrap;
-    -webkit-flex-flow: column wrap;
-    height: 150px;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    margin-left: 0;
-    padding-left: 0
-}
-
-.pricing-plans .asterisk {
-    color: #b6b6b6;
-    font-size: 14px;
-    margin: auto;
-    text-align: center;
-    width: 80%
-}
-
-.pricing-plans .checkmark,.pricing-plans .thin-check {
-    fill: #7ac142;
-    height: 22px;
-    width: 22px
-}
 
 @media (max-width: 1150px) {
     .pricing-plans .plan {
@@ -19026,7 +18668,7 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
     border-left: 1px solid #608a9e;
 }
 
-#bar-nav li.menu-item-355 a {
+#bar-nav li.menu-item-378 a {
     padding-left: 0;
     border-left: none;
 }
@@ -19051,6 +18693,7 @@ article {
 
 article p {
     color: #608a9e;
+    line-height: 1.65em;
 }
 
 article .left {
