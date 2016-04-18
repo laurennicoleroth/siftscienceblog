@@ -13,13 +13,16 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sift_science_blog' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'sift_science_blog' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'sift_science_blog' ), 'sift_science_blog', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+  <footer>
+    <div class="footer-container">
+      <div class="company-info">
+        <svg class="footer-logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer-logo"></use>
+        </svg>
+        <p>Copyright Sift Science, Inc. 2011-2016</p>
+        </div> <!-- end .company-info -->
+      </div> <!-- end .footer-container -->
+    </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

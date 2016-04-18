@@ -27,6 +27,8 @@ function sift_science_blog_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	add_filter('show_admin_bar', '__return_false');
+
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
