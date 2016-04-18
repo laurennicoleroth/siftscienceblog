@@ -115,19 +115,22 @@
 
     			</header>
   <div class="banner"><div class="banner-container">
-  	<div class="headline">
-      <div class="left">
-        <?php
+ 	 <?php
           $description = get_bloginfo( 'description', 'display' );
           if ( is_front_page() && is_home() ) : ?>
+  	<div class="headline">
+      <div class="left">
+
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
             <p class="site-description"><?php  echo $description; /* WPCS: xss ok. */ ?></p>
-          <?php endif;?>
+
     </div>
     <div class="right">
-        <img src="http://localhost:8888/siftscience/wp-content/themes/siftscience/images/blog-lady.svg" alt="" />
+        <img src="http://localhost:8888/siftscience/wp-content/themes/sift_science_blog/images/blog-lady.svg" alt="" />
     </div>
   	</div> <!-- end .headline -->
+
+  	<?php endif;?>
 	</div>
 </div>
 <div id="bar-nav">
