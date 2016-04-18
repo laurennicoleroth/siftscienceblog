@@ -18645,11 +18645,23 @@ header .menu-dropdown:before,header.trans-fixed.light .menu-dropdown:before,head
     padding: 20px 0px;
 }
 
+#bar-nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+}
+
+#search {
+    float: right;
+    width: 40%;
+}
+
 #bar-nav nav {
-    margin: 0px auto;
     max-width: 1200px;
     text-align: justify;
-    width: 90%;
+    width: 60%;
+    float: left;
 }
 
 #bar-nav li {
@@ -18717,3 +18729,4 @@ article:after {
     display: table;
     clear: both;
 }
+

@@ -129,9 +129,14 @@
 	</div>
 </div>
 <div id="bar-nav">
-  <nav>
-    <?php wp_nav_menu( array( 'theme_location' => 'tags-menu' ) ); ?>
-  </nav>
+  <div id="bar-nav-container">
+    <nav>
+      <?php wp_nav_menu( array( 'theme_location' => 'tags-menu' ) ); ?>
+    </nav>
+    <div id="search">
+      <?php get_search_form(); ?>
+    </div>
+  </div>
 </div>
 
 
