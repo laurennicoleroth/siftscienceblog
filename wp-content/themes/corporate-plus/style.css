@@ -422,6 +422,14 @@ address {
 	opacity: 0.6;
 }
 
+#primary-menu {
+
+}
+
+#utility {
+
+}
+
  #utility svg {
 		fill: #fff;
     height: 10px;
@@ -664,6 +672,36 @@ address {
 		width: 130px;
 		margin-top: 13px;
 		margin-right: 20px;
+	}
+
+	.navbar {
+		-webkit-transition: background-color .5s,height .5s;
+    -moz-transition: background-color .5s,height .5s;
+    transition: background-color .5s,height .5s;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    height: 80px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 1px solid red;
+	}
+
+	.sift-brand {
+		margin-top: -8px;
+    position: relative;
+    height: 20px;
+    width: 130px;
+    border: 1px solid blue;
+	}
+
+	#utility {
+		float: right;
+    font-size: 14px;
+    height: 100%;
+    border: 1px solid pink;
 	}
 }
 @media screen and (max-width: 767px){
