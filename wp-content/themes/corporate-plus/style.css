@@ -242,9 +242,73 @@ td,th{
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Light.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Light.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Light.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Light.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Light.svg#ProximaNova') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Reg.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Reg.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Reg.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Reg.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Reg.svg#ProximaNova') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Sbold.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Sbold.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Sbold.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Sbold.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Sbold.svg#ProximaNova') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Bold.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Bold.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Bold.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Bold.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-Bold.svg#ProximaNova') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-LightIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-LightIt.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-LightIt.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-LightIt.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-LightIt.svg#ProximaNova') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-RegIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-RegIt.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-RegIt.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-RegIt.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-RegIt.svg#ProximaNova') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-SboldIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-SboldIt.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-SboldIt.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-SboldIt.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-SboldIt.svg#ProximaNova') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-BoldIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-BoldIt.otf?#iefix') format('embedded-opentype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-BoldIt.woff') format('woff'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-BoldIt.ttf') format('truetype'),url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/fonts/proxima/ProximaNova-BoldIt.svg#ProximaNova') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
 body {
 	font-style: normal;
-	font-family: 'Lato', sans-serif;
+	font-family: 'ProximaNova', sans-serif;
 	font-size: 16px;
 	color: #2d2d2d;
 	font-weight: 400;
@@ -262,7 +326,7 @@ h5,
 h5 a,
 h6,
 h6 a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'ProximaNova', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #2d2d2d;
@@ -328,7 +392,7 @@ address {
 # Navigation
 --------------------------------------------------------------*/
 .navbar {
-	background: transparent;
+	background: #f7ba50;
 	padding: 15px 0;
 	transition: all 0.2s ease-out 0s;
 	z-index: 3000;
