@@ -32,7 +32,7 @@ global $corporate_plus_customizer_all_values;
 			<!--post thumbnal options-->
 			<div class="post-thumb">
 				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail( 'thumbnail' ); ?>
+					<?php the_post_thumbnail(); ?>
 				</a>
 			</div><!-- .post-thumb-->
 			<?php
@@ -42,7 +42,6 @@ global $corporate_plus_customizer_all_values;
 			<?php
 			the_excerpt();
 			?>
-			<a class="read-more" href="<?php the_permalink(); ?> "><?php _e('Read More', 'corporate-plus'); ?></a>
 			<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'corporate-plus' ),
