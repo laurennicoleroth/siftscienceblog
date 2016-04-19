@@ -146,14 +146,28 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
-                    <?php
+                    <a href="/" class="sift-brand">
+                      <svg class="color-logo">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
+                      </svg>
+                      <svg class="color-hexagon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-hexagon"></use>
+                      </svg>
+                      <svg class="monochrome-logo">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-logo"></use>
+                      </svg>
+                      <svg class="monochrome-hexagon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use>
+                      </svg>
+                    </a>
+               <!--      <?php
                     if ( 'disable' != $corporate_plus_customizer_all_values['corporate-plus-header-id-display-opt'] ):
                         if ( 'logo-only' == $corporate_plus_customizer_all_values['corporate-plus-header-id-display-opt'] ):
                             if( !empty( $corporate_plus_customizer_all_values['corporate-plus-header-logo'] ) ):
                                 $corporate_plus_header_alt = $corporate_plus_customizer_all_values['corporate-plus-header-alt'];
                                 ?>
                                 <a class="navbar-brand animated" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                        <img src="<?php echo esc_url( $corporate_plus_customizer_all_values['corporate-plus-header-logo'] ); ?>" alt="<?php echo esc_attr( $corporate_plus_header_alt ); ?>" />
+                                        <img src="<?php //echo esc_url( $corporate_plus_customizer_all_values['corporate-plus-header-logo'] ); ?>" alt="<?php echo esc_attr( $corporate_plus_header_alt ); ?>" />
                                     </a>
                                 <?php
                             endif;/*corporate-plus-header-logo*/
@@ -179,7 +193,7 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                             <?php
                         endif;
                     endif;
-                    ?>
+                    ?> -->
                 </div>
                 <div class="main-navigation navbar-collapse collapse">
                     <?php
