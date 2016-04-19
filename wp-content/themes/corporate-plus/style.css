@@ -689,6 +689,12 @@ address {
     border: 1px solid red;
 	}
 
+	.main-navigation {
+		min-width: 600px;
+    width: 55%;
+    float: left;
+	}
+
 	.sift-brand {
 		margin-top: -8px;
     position: relative;
@@ -697,11 +703,25 @@ address {
     border: 1px solid blue;
 	}
 
-	#utility {
-		float: right;
+	.utility-nav {
+		float: left;
+		width: 30%;
     font-size: 14px;
     height: 100%;
     border: 1px solid pink;
+	}
+
+	.utility-nav span, .utility-nav a {
+		margin: 0 10px;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.request-demo svg {
+		fill: #fff;
+    height: 10px;
+    margin: -3px 10px 0 0;
+    width: 15px;
 	}
 }
 @media screen and (max-width: 767px){
