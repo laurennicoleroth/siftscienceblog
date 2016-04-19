@@ -20,6 +20,13 @@ get_header(); ?>
 				<h1 class="page-title"><?php single_post_title(); ?></h1>
 			</header>
 		<?php endif; ?>
+		  <div class="left">
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+        <p class="site-description"><?php  $description = get_bloginfo( 'description', 'display' ); echo $description; /* WPCS: xss ok. */ ?></p>
+			</div>
+	    <div class="right">
+	        <img src="http://localhost:8888/siftscience/wp-content/themes/sift_science_blog/images/blog-lady.svg" alt="" />
+	    </div>
 	</div>
 	<div id="content" class="site-content">
 		<?php

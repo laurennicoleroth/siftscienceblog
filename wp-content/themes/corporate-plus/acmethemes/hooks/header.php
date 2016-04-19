@@ -176,7 +176,7 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                             array(
                                 'theme_location' => 'one-page',
                                 'menu_id' => 'primary-menu',
-                                'menu_class' => 'nav navbar-nav navbar-right animated',
+                                'menu_class' => 'nav navbar-nav navbar-left animated',
                             )
                         );
                     }
@@ -185,7 +185,7 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                         array(
                             'theme_location' => 'primary',
                             'menu_id' => 'primary-menu',
-                            'menu_class' => 'nav navbar-nav navbar-right animated',
+                            'menu_class' => 'nav navbar-nav navbar-left animated',
                         )
                     );
                     }
