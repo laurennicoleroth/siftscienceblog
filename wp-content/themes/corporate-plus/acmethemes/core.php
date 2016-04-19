@@ -42,6 +42,7 @@ if ( ! function_exists( 'corporate_plus_setup' ) ) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
             'primary' => esc_html__( 'Primary', 'corporate-plus' ),
+            'utility' => esc_html__( 'Utility', 'corporate-plus'),
             'one-page' => esc_html__( 'One Page Menu for Front Page', 'corporate-plus' )
         ) );
 

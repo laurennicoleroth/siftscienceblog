@@ -13,3 +13,4 @@
  */
 $corporate_plus_init_file_path = trailingslashit( get_template_directory() ).'acmethemes/init.php';
 require $corporate_plus_init_file_path;
+

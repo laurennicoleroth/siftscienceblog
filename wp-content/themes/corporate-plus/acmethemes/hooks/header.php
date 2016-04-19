@@ -179,6 +179,7 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                                 'menu_class' => 'nav navbar-nav navbar-left animated',
                             )
                         );
+
                     }
                     else{
                      wp_nav_menu(
@@ -191,6 +192,14 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                     }
                    ?>
                 </div>
+                <div id="utility" class="main-navigation navbar-collapse collapse">
+                        <!-- <span class="SvgIcon envelope" data-reactid=".1.$=10.0.0">
+                            <svg class="icon-envelope">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use>
+                            </svg>
+                        </span> -->
+                        <?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
+                    </div>
                 <!--/.nav-collapse -->
             </div>
         </div>
