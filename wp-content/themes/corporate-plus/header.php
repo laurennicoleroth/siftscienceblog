@@ -91,7 +91,7 @@ do_action( 'corporate_plus_action_before_head' );?>
  *
  * @hooked corporate_plus_site_start - 20
  */
-do_action( 'corporate_plus_action_before' );
+//do_action( 'corporate_plus_action_before' );
 
 /**
  * corporate_plus_action_before_header hook
@@ -99,7 +99,7 @@ do_action( 'corporate_plus_action_before' );
  *
  * @hooked corporate_plus_skip_to_content - 10
  */
-do_action( 'corporate_plus_action_before_header' );
+//do_action( 'corporate_plus_action_before_header' );
 
 
 /**
@@ -126,4 +126,4 @@ do_action( 'corporate_plus_action_after_header' );
  *
  * @hooked null
  */
-do_action( 'corporate_plus_action_before_content' );
+//do_action( 'corporate_plus_action_before_content' );

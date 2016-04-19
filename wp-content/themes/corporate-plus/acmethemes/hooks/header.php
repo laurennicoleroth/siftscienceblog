@@ -71,7 +71,7 @@ if ( ! function_exists( 'corporate_plus_body_class' ) ) :
 
     function corporate_plus_body_class( $corporate_plus_body_classes ) {
         global $corporate_plus_customizer_all_values;
-        
+
         if ( 'no-image' == $corporate_plus_customizer_all_values['corporate-plus-blog-archive-layout'] ) {
             $corporate_plus_body_classes[] = 'blog-no-image';
         }

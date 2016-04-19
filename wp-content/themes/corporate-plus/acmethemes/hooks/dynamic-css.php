@@ -26,7 +26,7 @@ if ( ! function_exists( 'corporate_plus_dynamic_css' ) ) :
         }
         $custom_css .= "
               .inner-main-title {
-                background-image:url('{$bg_image_url}');
+                // background-image:url('{$bg_image_url}');
                 background-repeat:no-repeat;
                 background-size:cover;
                 background-attachment:fixed;
