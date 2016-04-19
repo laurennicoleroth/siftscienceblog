@@ -1697,11 +1697,9 @@ article.page .post-thumb {
 }
 article.post,
 article.page{
-	border-bottom : 1px solid #e5e5e5;
+	border-bottom: 1px solid #cccccc;
 	padding: 0 0 10px;
 	background-color: #fff;
-	border-radius: 4px;
-	box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.133);
 }
 article.post.sticky{
 	padding: 8px;

@@ -18,7 +18,9 @@ global $corporate_plus_customizer_all_values;
 			<?php
 			if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php corporate_plus_posted_on(); ?>
+					<span>
+						<?php the_date('F d, Y', '<strong>', '</strong>'); ?> by <?php the_author(); ?>
+					</span>
 				</div><!-- .entry-meta -->
 				<?php
 			endif; ?>
