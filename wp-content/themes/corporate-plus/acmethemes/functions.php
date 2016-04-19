@@ -203,3 +203,5 @@ if( ! function_exists( 'corporate_plus_breadcrumbs' ) ):
         echo "</div>";
     }
 endif;
+
+add_filter('show_admin_bar', '__return_false');

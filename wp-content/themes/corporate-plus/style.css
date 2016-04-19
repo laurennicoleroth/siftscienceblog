@@ -537,6 +537,17 @@ address {
 	.navbar  .container > .navbar-header{
 		margin: 0;
 	}
+
+	.color-logo {
+		height: 20px;
+		width: 130px;
+	}
+
+	.color-hexagon, .monochrome-logo, .monochrome-hexagon {
+		display: none;
+	}
+
+
 }
 
 .site-main .comment-navigation,
