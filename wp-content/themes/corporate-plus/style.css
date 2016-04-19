@@ -345,15 +345,15 @@ address {
 	height: 80px;
 }
 .navbar .navbar-toggle {
-	/*background-color: #2d2d2d;*/
-	color: #cccccc;
-	font-size: 22px;
-	border-radius: 4px;
-	margin-bottom: 3px;
-	margin-top: 3px;
 	outline: medium none;
 	transition: all 0.2s ease-out 0s;
 }
+
+.navbar-toggle .veggieburger {
+	opacity: 0.6;
+}
+
+
 .navbar .navbar-toggle .icon-bar {
 	background-color: #2d2d2d;
 }
@@ -486,10 +486,18 @@ address {
 		margin-bottom: 0;
 	}
 
+	.veggieburger {
+		fill: #b6b6b6;
+    height: 20px;
+    float: right;
+    position: absolute;
+    top: -14px;
+	}
+
 	.main-navigation li {
 		float: none;
 		display: block;
-		border-top: 1px solid #999;
+		/*border-top: 1px solid #999;*/
 	}
 
 	.main-navigation{
