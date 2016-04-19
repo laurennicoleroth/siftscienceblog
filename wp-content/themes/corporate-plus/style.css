@@ -331,11 +331,7 @@ address {
 	max-height: 55px;
 	max-width: 310px;
 }
-.navbar-small,
-.navbar-no-fs{
-	background: rgba(0, 0, 0, 1)!important;
-	padding: 5px 0px!important;
-}
+
 .navbar .navbar-brand {
 	margin: 0 0 0 15px;
 	padding: 0;
@@ -484,6 +480,11 @@ address {
 	}
 	.navbar{
 		margin-bottom: 0;
+	}
+
+	a.sift-brand {
+		position: absolute;
+    top: 20px;
 	}
 
 	.veggieburger {
