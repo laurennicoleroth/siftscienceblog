@@ -145,7 +145,15 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
         <div class="navbar at-navbar navbar-fixed-top <?php echo esc_attr( $inner_nav );?>" id="navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button> -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <svg class="veggieburger">
+                            <rect y="0" width="24" height="4"></rect>
+                            <rect y="8" width="24" height="4"></rect>
+                            <rect y="16" width="24" height="4"></rect>
+                        </svg>
+                    </button>
+
                     <a href="/" class="sift-brand">
                       <svg class="color-logo">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
