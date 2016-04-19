@@ -326,6 +326,7 @@ address {
 	transition: all 0.2s ease-out 0s;
 	z-index: 3000;
 }
+
 .navbar-brand > img {
 	display: block;
 	max-height: 55px;
@@ -362,7 +363,7 @@ address {
 /*main-navigation*/
 .main-navigation{
 	text-align: right;
-	float: right;
+	float: left;
 }
 .main-navigation ul {
 	list-style: none;
@@ -450,6 +451,8 @@ address {
 		font-size: 16px;
 		padding: 18px 23px;
 	}
+
+	.
 }
 
 @media screen and (max-width: 836px){
@@ -472,7 +475,24 @@ address {
 	.main-navigation ul ul {
 		top: 3.2em;
 	}
+
+
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.color-hexagon, .color-logo {
+    display: none;
+	}
+
+	.monochrome-hexagon {
+		fill: white;
+		height: 20px;
+		width: 22px;
+		position: absolute;
+	}
+
+}
+
 
 @media screen and (max-width: 767px) {
 	.main-navigation{
@@ -539,6 +559,16 @@ address {
 		-moz-transition: all 0.9s ease 0s;
 		-o-transition: all 0.9s ease 0s;
 		-ms-transition: all 0.9s ease 0s;
+	}
+
+	.color-hexagon, .color-logo, .monochrome-hexagon {
+    display: none;
+	}
+
+	.monochrome-logo {
+		fill: white;
+		height: 20px;
+		width: 130px;
 	}
 }
 @media screen and (max-width: 767px){
