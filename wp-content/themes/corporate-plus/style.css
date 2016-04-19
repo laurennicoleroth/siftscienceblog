@@ -538,6 +538,15 @@ address {
 		margin: 0;
 	}
 
+
+	.navbar {
+    background: white;
+    padding: 27px 10px 0px 10px;
+    transition: all 0.2s ease-out 0s;
+    z-index: 3000;
+	}
+
+
 	.color-logo {
 		height: 20px;
 		width: 130px;

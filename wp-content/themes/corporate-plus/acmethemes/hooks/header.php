@@ -160,40 +160,7 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use>
                       </svg>
                     </a>
-               <!--      <?php
-                    if ( 'disable' != $corporate_plus_customizer_all_values['corporate-plus-header-id-display-opt'] ):
-                        if ( 'logo-only' == $corporate_plus_customizer_all_values['corporate-plus-header-id-display-opt'] ):
-                            if( !empty( $corporate_plus_customizer_all_values['corporate-plus-header-logo'] ) ):
-                                $corporate_plus_header_alt = $corporate_plus_customizer_all_values['corporate-plus-header-alt'];
-                                ?>
-                                <a class="navbar-brand animated" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                        <img src="<?php //echo esc_url( $corporate_plus_customizer_all_values['corporate-plus-header-logo'] ); ?>" alt="<?php echo esc_attr( $corporate_plus_header_alt ); ?>" />
-                                    </a>
-                                <?php
-                            endif;/*corporate-plus-header-logo*/
-                            ?>
-                            <?php
-                        else:/*else is title-only or title-and-tagline*/
-                            if ( is_front_page() && is_home() ) : ?>
-                                <h1 class="site-title">
-                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-                                </h1>
-                            <?php else : ?>
-                                <p class="site-title">
-                                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-                                </p>
-                            <?php endif;
-                            if ( 'title-and-tagline' == $corporate_plus_customizer_all_values['corporate-plus-header-id-display-opt'] ):
-                                $description = get_bloginfo( 'description', 'display' );
-                                if ( $description || is_customize_preview() ) : ?>
-                                    <p class="site-description"><?php echo esc_html( $description ); ?></p>
-                                <?php endif;
-                            endif;
-                            ?>
-                            <?php
-                        endif;
-                    endif;
-                    ?> -->
+
                 </div>
                 <div class="main-navigation navbar-collapse collapse">
                     <?php
