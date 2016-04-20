@@ -48,7 +48,10 @@ get_header(); ?>
             );
   		?>
   	</div>
-  	<div class="col-md-4">search</div>
+  	<div class="col-md-4">
+  		<?php get_search_form( ); ?>
+  		<a id="newsletter" href="#">newsletter sign up</a>
+  	</div>
 	</div>
 </div>
 

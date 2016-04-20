@@ -455,13 +455,17 @@ address {
 	background: #ededed;
 }
 
-
-
 #blog-menu a {
 	color: #608a9e;
 	text-transform: uppercase;
 	font-size: 13px;
   font-weight: 600;
+}
+
+#blog-menu .col-md-4 {
+	vertical-align: middle;
+  padding-top: 16px;
+  min-width: 380px;
 }
 
 .request-demo {
@@ -1783,10 +1787,13 @@ object {
 }
 .search-block{
 	display: inline-block;
-	float: right;
-	margin: 7px 10px;
 	position:relative;
-	width: 185px;
+}
+
+#newsletter {
+	padding: 11px 25px;
+  border: 1px solid #608a9e;
+  border-radius: 5px;
 }
 .error404 #primary .page-content .search-block,
 .search-no-results #primary .page-content .search-block {
@@ -1800,6 +1807,9 @@ object {
 	height: 31px;
 	padding: 2px 23px 2px 8px;
 	width: 100%;
+	text-transform: uppercase;
+	border-radius: 5px;
+	color: #608a9e;
 }
 .search-block #searchsubmit,
 .widget_search #searchsubmit{
@@ -1811,6 +1821,7 @@ object {
 	right: 7px;
 	top: 3px;
 	width: 25px;
+	color: #608a9e;
 }
 
 /*Inner Pages*/
