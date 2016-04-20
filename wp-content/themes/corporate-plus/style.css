@@ -692,23 +692,26 @@ address {
 	.main-navigation {
 		min-width: 600px;
     width: 55%;
-    float: left;
+    position: fixed;
+    top: 16px;
+    left: 200px;
 	}
 
 	.sift-brand {
-		margin-top: -8px;
-    position: relative;
+		position: fixed;
     height: 20px;
     width: 130px;
     border: 1px solid blue;
 	}
 
 	.utility-nav {
-		float: left;
 		width: 30%;
     font-size: 14px;
-    height: 100%;
+    height: 16px;
     border: 1px solid pink;
+    position: fixed;
+    top: 20px;
+    right: 0;
 	}
 
 	.utility-nav span, .utility-nav a {
@@ -730,7 +733,6 @@ address {
 		margin: 0;
 	}
 
-
 	.navbar {
     background: white;
     padding: 27px 10px 0px 10px;
@@ -744,7 +746,7 @@ address {
 		width: 130px;
 	}
 
-	.color-hexagon, .monochrome-logo, .monochrome-hexagon {
+	.color-hexagon, .monochrome-logo, .monochrome-hexagon, .utility-nav {
 		display: none;
 	}
 
