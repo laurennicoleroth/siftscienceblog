@@ -1893,11 +1893,7 @@ article.post .entry-content,
 article.page .entry-content {
 	margin: 0;
 }
-article.post .content-wrapper .post-thumb {
-	float: right;
-	margin-right: 10px;
-	width: 38%;
-}
+
 article.post .post-thumb,
 article.page .post-thumb {
 	text-align: center;
