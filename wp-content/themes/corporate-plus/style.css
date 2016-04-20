@@ -385,7 +385,7 @@ address {
 	margin-right: 5px;
 }
 .row {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 /*--------------------------------------------------------------
 # Navigation
@@ -481,6 +481,14 @@ address {
 
 #blog-menu ul li {
 	border-right: 1px solid #608a9e;
+}
+
+#blog-menu ul a {
+	padding: 0px 20px;
+}
+
+#blog-menu ul li:last-child {
+	border-right: none;
 }
 
  #utility svg {
@@ -933,8 +941,8 @@ address {
 }
 
 .inner-main-title .col-md-6 p {
-	  font-size: 18px;
-    max-width: 430px;
+	  font-size: 19px;
+    max-width: 450px;
     font-weight: 100;
 }
 
@@ -1858,8 +1866,18 @@ article.page .entry-header {
 }
 article.post .entry-header .entry-title,
 article.page .entry-header .entry-title{
-	margin: 0 0 10px;
+	margin: 0px 0 20px;
 }
+
+.entry-meta {
+	    margin: 0px 0 20px;
+}
+
+.entry-header h2 a {
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
 article.post .entry-content,
 article.page .entry-content {
 	margin: 0;
