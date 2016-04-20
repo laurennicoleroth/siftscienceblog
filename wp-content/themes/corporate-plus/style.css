@@ -258,7 +258,7 @@ td,th{
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Reg.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Regular.otf');
     font-weight: 400;
     font-style: normal;
 }
@@ -279,28 +279,28 @@ td,th{
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-LightIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-LightItalic.otf');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-RegIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-RegItalic.otf');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-SboldIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-SemiboldIt.otf');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-BoldIt.otf');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-SemiboldItalic.otf');
     font-weight: 700;
     font-style: italic;
 }
@@ -435,7 +435,18 @@ address {
 }
 
 #primary-menu {
+	margin-left: 30px;
+}
 
+.request-demo {
+	border-right: 1px solid white;
+}
+
+.signup {
+	  background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0;
 }
 
 #utility {

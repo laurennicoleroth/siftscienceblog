@@ -193,13 +193,23 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
          ?>
 
           <ul id="utility" class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">request demo</a></li>
+            <li class="request-demo">
+                <a href="/contact-sales" class="request-demo" data-reactid=".0.$=10.0">
+                  <span class="SvgIcon envelope" data-reactid=".0.$=10.0.0">
+                    <svg class="icon-envelope">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use>
+                    </svg>
+                  </span>
+                  <span data-reactid=".0.$=10.0.1">Request demo</span>
+                </a>
+            </li>
             <li><a href="../navbar-static-top/">log in</a></li>
-            <li><a href="./">sign up</a></li>
+            <li class="signup"><a href="./">sign up</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
 
         <?php
         if( 1 != $corporate_plus_enable_feature ) {

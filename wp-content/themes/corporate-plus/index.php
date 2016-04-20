@@ -20,20 +20,37 @@ get_header(); ?>
 				<h1 class="page-title"><?php single_post_title(); ?></h1>
 			</header>
 		<?php endif; ?>
-		  <div class="left">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-        <p class="site-description"><?php  $description = get_bloginfo( 'description', 'display' ); echo $description; /* WPCS: xss ok. */ ?></p>
+
+		<div class="row">
+			<div class="container">
+  			<div class="col-md-6">
+  				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+        	<p class="site-description"><?php  $description = get_bloginfo( 'description', 'display' ); echo $description; /* WPCS: xss ok. */ ?></p>
+  			</div>
+  			<div class="col-md-6">
+  				<img src="wp-content/themes/corporate-plus/assets/img/blog-lady.svg" alt="" />
+  			</div>
 			</div>
-	    <div class="right">
-	        <img src="http://localhost:8888/siftscience/wp-content/themes/sift_science_blog/images/blog-lady.svg" alt="" />
-	    </div>
+		</div>
+
 	</div>
+
+
+<div id="blog-menu" class="row">
+	<div class="container">
+  	<div class="col-md-8">menu links</div>
+  	<div class="col-md-4">search</div>
+	</div>
+</div>
+
 	<div id="content" class="site-content">
+
 		<?php
 		if( 1 == $corporate_plus_customizer_all_values['corporate-plus-show-breadcrumb'] ){
 			corporate_plus_breadcrumbs();
 		}
 		?>
+
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 				<?php
