@@ -142,59 +142,65 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
             $inner_nav .= ' navbar-no-fs';
         }
         ?>
-        <div class="navbar at-navbar navbar-fixed-top <?php echo esc_attr( $inner_nav );?>" id="navbar" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <svg class="veggieburger">
-                            <rect y="0" width="24" height="4"></rect>
-                            <rect y="8" width="24" height="4"></rect>
-                            <rect y="16" width="24" height="4"></rect>
-                        </svg>
-                    </button>
 
-                    <a href="/" class="sift-brand">
-                      <svg class="color-logo">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
-                      </svg>
-                      <svg class="color-hexagon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-hexagon"></use>
-                      </svg>
-                      <svg class="monochrome-logo">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-logo"></use>
-                      </svg>
-                      <svg class="monochrome-hexagon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use>
-                      </svg>
-                    </a>
-
-                </div>
-                <div class="main-navigation navbar-collapse collapse">
-                    <?php
-                    if( is_front_page() && !is_home() && has_nav_menu( 'one-page') ){
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'one-page',
-                                'menu_id' => 'primary-menu',
-                                'menu_class' => 'nav navbar-nav navbar-left animated',
-                            )
-                        );
-
-                    }
-                    else{
-                     wp_nav_menu(
-                        array(
-                            'theme_location' => 'primary',
-                            'menu_id' => 'primary-menu',
-                            'menu_class' => 'nav navbar-nav navbar-left animated',
-                        )
-                    );
-                    }
-                   ?>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- <span class="sr-only">Toggle navigation</span> -->
+            <svg class="veggieburger">
+            <rect y="0" width="24" height="4"></rect>
+            <rect y="8" width="24" height="4"></rect>
+            <rect y="16" width="24" height="4"></rect>
+          </svg>
+          </button>
+          <a href="/" class="sift-brand">
+          <svg class="color-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-logo"></use>
+          </svg>
+          <svg class="color-hexagon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-color-hexagon"></use>
+          </svg>
+          <svg class="monochrome-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-logo"></use>
+          </svg>
+          <svg class="monochrome-hexagon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-monochrome-hexagon"></use>
+          </svg>
+        </a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <?php
+            if( is_front_page() && !is_home() && has_nav_menu( 'one-page') ){
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'one-page',
+                        'menu_id' => 'primary-menu',
+                        'menu_class' => 'nav navbar-nav animated',
+                    )
+                );
+
+            }
+            else{
+             wp_nav_menu(
+                array(
+                    'theme_location' => 'primary',
+                    'menu_id' => 'primary-menu',
+                    'menu_class' => 'nav navbar-nav animated',
+                )
+            );
+            }
+         ?>
+
+          <ul id="utility" class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">request demo</a></li>
+            <li><a href="../navbar-static-top/">log in</a></li>
+            <li><a href="./">sign up</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
         <?php
         if( 1 != $corporate_plus_enable_feature ) {
             echo "<div class='no-fs-clearfix'></div>";

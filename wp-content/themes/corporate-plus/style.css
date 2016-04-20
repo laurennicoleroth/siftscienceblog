@@ -399,6 +399,21 @@ address {
 	z-index: 3000;
 }
 
+.navbar a {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+}
+
 .navbar-brand > img {
 	display: block;
 	max-height: 55px;
@@ -581,6 +596,10 @@ address {
     display: none;
 	}
 
+	.navbar-nav {
+		min-width: inherit;
+	}
+
 	.monochrome-hexagon {
 		fill: white;
 		height: 20px;
@@ -657,6 +676,15 @@ address {
 		-o-transition: all 0.9s ease 0s;
 		-ms-transition: all 0.9s ease 0s;
 	}
+
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    position: fixed;
+    top: 13px;
+    right: 20px;
+    background: #f7ba50;
+}
 
 .navbar-nav>li>a {
      padding-top: 10px;
