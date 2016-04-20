@@ -327,6 +327,7 @@ h6,
 h6 a {
 	font-family: 'ProximaNova', sans-serif;
 	font-weight: 600;
+  line-height: 1.1;
 	color: #2d2d2d;
 }
 
@@ -396,10 +397,21 @@ address {
 	z-index: 3000;
 }
 
+.navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .navbar a {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 0px 13px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -436,6 +448,20 @@ address {
 
 #primary-menu {
 	margin-left: 30px;
+	margin-top: 5px;
+}
+
+#blog-menu {
+	background: #ededed;
+}
+
+
+
+#blog-menu a {
+	color: #608a9e;
+	text-transform: uppercase;
+	font-size: 13px;
+  font-weight: 600;
 }
 
 .request-demo {
@@ -449,8 +475,12 @@ address {
     margin: 0;
 }
 
-#utility {
+#blog-menu ul {
+	padding: 17px 0px;
+}
 
+#blog-menu ul li {
+	border-right: 1px solid #608a9e;
 }
 
  #utility svg {
@@ -579,6 +609,10 @@ address {
 	.main-navigation{
 		text-align: left;
 	}
+
+	.inner-main-title img {
+		display: none;
+	}
 }
 @media screen and (max-width: 1023px){
 	.main-navigation a {
@@ -685,11 +719,16 @@ address {
 		-ms-transition: all 0.9s ease 0s;
 	}
 
+.navbar-nav>li>a {
+     padding-top: 5px !important;
+     padding-bottom: 5px !important;
+}
+
 .navbar-right {
     float: right!important;
     margin-right: -15px;
     position: fixed;
-    top: 13px;
+    top: 19px;
     right: 20px;
     background: #f7ba50;
 }
@@ -877,24 +916,26 @@ address {
 # Content
 --------------------------------------------------------------*/
 .inner-main-title {
-	position: relative;
-	width: 100%;
-	height: 350px;
+	height: 363px;
 	background-color: #f7ba50;
 	text-align: left;
 	padding:80px;
-	margin-bottom: 60px;
+	overflow: hidden;
 }
 
-.inner-main-title .left {
-    float: left;
-    width: 50%;
+.inner-main-title .col-md-6 {
     text-align: left;
-    padding: 30px;
 }
 
-.inner-main-title .left h1 {
-	margin-bottom: 30px;
+.inner-main-title .col-md-6 h1 {
+    margin-bottom: 12px;
+    margin-top: 70px;
+}
+
+.inner-main-title .col-md-6 p {
+	  font-size: 18px;
+    max-width: 430px;
+    font-weight: 100;
 }
 
 .inner-main-title .right {
@@ -903,9 +944,9 @@ address {
 }
 
 .inner-main-title img {
-	width: 450px;
-	height: auto;
-	float: right;
+	  width: 450px;
+    height: auto;
+    float: left;
 }
 
 .inner-main-title:after {
@@ -1176,7 +1217,7 @@ object {
 .site-title,
 .site-title a{
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 32px;
 	margin: 0;
 }
 .site-description,

@@ -36,9 +36,18 @@ get_header(); ?>
 	</div>
 
 
-<div id="blog-menu" class="row">
+<div id="blog-menu" class="row animate">
 	<div class="container">
-  	<div class="col-md-8">menu links</div>
+  	<div class="col-md-8">
+  		<?php wp_nav_menu(
+                array(
+                    'theme_location' => 'utility',
+                    'menu_id' => 'utility',
+                    'menu_class' => 'nav navbar-nav animated',
+                )
+            );
+  		?>
+  	</div>
   	<div class="col-md-4">search</div>
 	</div>
 </div>
