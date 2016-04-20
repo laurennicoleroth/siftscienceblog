@@ -40,7 +40,7 @@ Tags: black, brown, orange, white, yellow, light, one-column, two-columns, left-
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: "ProximaNova", sans-serif;
+	font-family: ProximaNova, sans-serif;
 	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
 }
@@ -245,65 +245,62 @@ td,th{
 # Typography
 --------------------------------------------------------------*/
 @font-face {
+	font-family: 'ProximaNova';
+	src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Light.otf');
+}
+
+@font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-Light.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-Light.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Light.otf');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-Reg.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-Reg.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-Reg.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-Reg.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Reg.otf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-Sbold.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-Sbold.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-Sbold.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-Sbold.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-Sbold.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Semibold.otf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-Bold.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-Bold.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-Bold.otf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-LightIt.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-LightIt.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-LightIt.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-LightIt.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-LightIt.otf');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-RegIt.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-RegIt.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-RegIt.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-RegIt.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-RegIt.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-RegIt.otf');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-SboldIt.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-SboldIt.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-SboldIt.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-SboldIt.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-SboldIt.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-SboldIt.otf');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ProximaNova';
-    src: url('/css/fonts/ProximaNova/ProximaNova-BoldIt.eot');
-    src: url('/css/fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),url('/css/fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),url('/css/fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype'),url('/css/fonts/ProximaNova/ProximaNova-BoldIt.svg#ProximaNova') format('svg');
+    src: url('http://localhost:8888/siftscience/wp-content/themes/corporate-plus/assets/fonts/proxima/ProximaNova-BoldIt.otf');
     font-weight: 700;
     font-style: italic;
 }
