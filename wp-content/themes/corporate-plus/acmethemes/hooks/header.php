@@ -192,24 +192,6 @@ if ( ! function_exists( 'corporate_plus_header' ) ) :
                     }
                    ?>
                 </div>
-        <div class="utility-nav">
-          <span class="console-login">
-            <span data-reactid=".0">
-              <span data-reactid=".0.$=10">
-                <a href="https://siftscience.com/contact-sales" class="request-demo" data-reactid=".0.$=10.0">
-                  <span class="SvgIcon envelope" data-reactid=".0.$=10.0.0">
-                    <svg class="icon-envelope">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use>
-                    </svg>
-                  </span>
-                  <span data-reactid=".0.$=10.0.1">Request demo</span>
-                </a>
-                <a href="https://siftscience.com/console/login" data-reactid=".0.$=10.1">log in</a>
-                <a href="https://siftscience.com/signup" class="signup" data-reactid=".0.$=10.2">sign up</a>
-              </span>
-            </span>
-          </span>
-      </div>
                 <!--/.nav-collapse -->
             </div>
         </div>

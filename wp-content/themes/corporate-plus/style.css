@@ -441,17 +441,13 @@ address {
 .navbar .navbar-toggle .icon-bar {
 	background-color: #2d2d2d;
 }
-.navbar-nav > li{
 
-}
-
-
-
-#menu-item-366 {
+#menu-item-396 {
 	border-right: 1px solid white;
+	padding-left: 60px;
 }
 
-#menu-item-368 {
+#menu-item-398 {
 	background: none;
   border: 2px solid #fff;
   border-radius: 5px;
@@ -464,7 +460,7 @@ address {
 /*main-navigation*/
 .main-navigation{
 	text-align: right;
-	float: left;
+	float: right;
 }
 .main-navigation ul {
 	list-style: none;
@@ -662,6 +658,11 @@ address {
 		-ms-transition: all 0.9s ease 0s;
 	}
 
+.navbar-nav>li>a {
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
 	.color-hexagon, .color-logo, .monochrome-hexagon {
     display: none;
 	}
@@ -670,62 +671,9 @@ address {
 		fill: white;
 		height: 20px;
 		width: 130px;
-		margin-top: 13px;
-		margin-right: 20px;
+		margin-top: 7px;
 	}
 
-	.navbar {
-		-webkit-transition: background-color .5s,height .5s;
-    -moz-transition: background-color .5s,height .5s;
-    transition: background-color .5s,height .5s;
-    background-color: transparent;
-    box-shadow: 0 0 0 #fff;
-    height: 80px;
-    padding: 0 2%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    border: 1px solid red;
-	}
-
-	.main-navigation {
-		min-width: 600px;
-    width: 55%;
-    position: fixed;
-    top: 16px;
-    left: 200px;
-	}
-
-	.sift-brand {
-		position: fixed;
-    height: 20px;
-    width: 130px;
-    border: 1px solid blue;
-	}
-
-	.utility-nav {
-		width: 30%;
-    font-size: 14px;
-    height: 16px;
-    border: 1px solid pink;
-    position: fixed;
-    top: 20px;
-    right: 0;
-	}
-
-	.utility-nav span, .utility-nav a {
-		margin: 0 10px;
-		text-transform: uppercase;
-		color: white;
-	}
-
-	.request-demo svg {
-		fill: #fff;
-    height: 10px;
-    margin: -3px 10px 0 0;
-    width: 15px;
-	}
 }
 @media screen and (max-width: 767px){
 	.navbar  .container > .navbar-collapse,
