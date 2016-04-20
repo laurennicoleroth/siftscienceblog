@@ -1615,7 +1615,7 @@ object {
 
 @media only screen and (max-width: 1170px){
 	.site-content{
-		width: 96%;
+		/*width: 96%;*/
 	}
 }
 @media only screen and (max-width: 767px){
