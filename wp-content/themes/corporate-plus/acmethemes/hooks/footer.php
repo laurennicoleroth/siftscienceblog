@@ -37,9 +37,14 @@ if ( ! function_exists( 'corporate_plus_footer' ) ) :
 			<div class="clearfix"></div>
 			<div class="footer-copyright border text-center init-animate animated fadeInRight">
                 <div class="site-info">
-                    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'corporate-plus' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'corporate-plus' ), 'WordPress' ); ?></a>
+                    <!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'corporate-plus' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'corporate-plus' ), 'WordPress' ); ?></a>
                     <span class="sep"> | </span>
-                    <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'corporate-plus' ), 'Corporate Plus', '<a href="http://www.acmethemes.com/" rel="designer">AcmeThemes</a>' ); ?>
+                    <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'corporate-plus' ), 'Corporate Plus', '<a href="http://www.acmethemes.com/" rel="designer">AcmeThemes</a>' ); ?> -->
+                    <div class="company-info">
+                        <svg class="footer-logo">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer-logo"></use>
+                        </svg>
+                        <p>Copyright Sift Science, Inc. 2011-2016</p></div>
                 </div><!-- .site-info -->
             </div>
             <a href="#page" class="sm-up-container"><i class="fa fa-arrow-circle-up sm-up"></i></a>

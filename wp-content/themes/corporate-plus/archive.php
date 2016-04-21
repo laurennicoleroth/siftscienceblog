@@ -10,7 +10,7 @@
 get_header();
 global $corporate_plus_customizer_all_values;
 ?>
-<div class="wrapper inner-main-title init-animate fadeInDown animated">
+<div id="archive" class="wrapper inner-main-title init-animate fadeInDown animated">
 	<header>
 		<?php
 		the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -22,7 +22,7 @@ global $corporate_plus_customizer_all_values;
 	<?php
 	if( 1 == $corporate_plus_customizer_all_values['corporate-plus-show-breadcrumb'] ){
 		corporate_plus_breadcrumbs();
-	} 
+	}
 	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

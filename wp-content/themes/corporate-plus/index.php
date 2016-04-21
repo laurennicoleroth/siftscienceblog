@@ -49,8 +49,10 @@ get_header(); ?>
   		?>
   	</div>
   	<div class="col-md-4">
-  		<?php //get_search_form( ); ?>
-
+  		<?php get_search_form( ); ?>
+  		<!-- <svg class="icon-search">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+      </svg> -->
   		<a id="newsletter" href="#">newsletter sign up</a>
   	</div>
 	</div>
