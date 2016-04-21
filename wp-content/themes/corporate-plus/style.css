@@ -1156,12 +1156,8 @@ article.sticky {
 		width: 100%;
 	}
 
-	.container {
-		padding: 0px;
-	}
-
-	.col-md-6 {
-		width: 100%;
+	.inner-main-title {
+		height: 100%;
 	}
 
 	.inner-main-title h1 {
@@ -1172,6 +1168,14 @@ article.sticky {
 	.inner-main-title p {
 		font-size: 10px;
 		text-align: center;
+	}
+
+	.row {
+		margin-bottom: 0px;
+	}
+
+	.col-md-4 .post-thumb {
+		display: none;
 	}
 
 	#blog-menu {
@@ -1418,7 +1422,6 @@ object {
 	}
 
 	.inner-main-title .right {
-		display: none;
 	}
 }
 @media only screen and (max-width: 640px) and (min-width: 480px) {
@@ -1446,6 +1449,21 @@ object {
 	.text-slider-caption,
 	.banner-title-line.line > span{
 		display: none;
+	}
+
+.inner-main-title .col-md-6 p {
+    font-size: 1em;
+    max-width: 450px;
+    font-weight: 100;
+}
+
+	.inner-main-title {
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+
+	.inner-main-title .col-md-6 img {
+		display: block;
 	}
 }
 
