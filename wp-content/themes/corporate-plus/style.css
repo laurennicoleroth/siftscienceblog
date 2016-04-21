@@ -1155,6 +1155,48 @@ article.sticky {
 	.comment-form textarea{
 		width: 100%;
 	}
+
+	.container {
+		padding: 0px;
+	}
+
+	.col-md-6 {
+		width: 100%;
+	}
+
+	.inner-main-title h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.inner-main-title p {
+		font-size: 10px;
+		text-align: center;
+	}
+
+	#blog-menu {
+		background: white;
+	}
+
+	#blog-menu .col-md-4 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#blog-menu #newsletter {
+		display: none;
+	}
+
+	#blog-menu ul {
+		display: none;
+	}
+
+	#blog-menu ul li{
+		background: white;
+		padding: 7px 0px;
+		border-bottom: 1px solid #eeeeee;
+		text-align: center;
+	}
 }
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -1738,8 +1780,8 @@ object {
 		margin-top: 2em;
 	}
 	.inner-main-title{
-		margin-bottom: 30px;
 	}
+
 	#primary,
 	.secondary-sidebar {
 		width: 100%;
