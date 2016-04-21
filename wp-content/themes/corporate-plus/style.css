@@ -404,6 +404,14 @@ address {
 	z-index: 3000;
 }
 
+.navbar .navbar-toggle:hover, .main-navigation .current_page_item > a:before, .main-navigation .current-menu-item > a:before, .main-navigation .active > a:before, .main-navigation .current_page_ancestor > a:before, .comment-form .form-submit input, .read-more, .btn-primary, .circle, .line > span, .wpcf7-form input.wpcf7-submit, .wpcf7-form input.wpcf7-submit:hover, .breadcrumb {
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+     border-color: white;
+}
+
 .navbar-nav>li>a {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -700,12 +708,21 @@ address {
     float: right;
     position: absolute;
     top: -14px;
+    cursor: pointer;
 	}
 
 	.main-navigation li {
 		float: none;
 		display: block;
 		/*border-top: 1px solid #999;*/
+	}
+
+	#utility {
+		display: none;
+	}
+
+	#blog-menu {
+		padding-bottom: 10px;
 	}
 
 	.main-navigation{
@@ -736,6 +753,7 @@ address {
 	.main-navigation ul ul a:hover {
 		background: rgba(0, 0, 0, 0);
 	}
+
 }
 
 @media screen and (min-width: 768px){
@@ -1156,6 +1174,25 @@ article.sticky {
 		width: 100%;
 	}
 
+	.navbar-nav {
+		margin: 0px 0px;
+	}
+
+	#primary-menu {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#primary-menu a {
+		border-bottom: 1px solid #eeeeee;
+		color: #555555;
+		text-align: center;
+		padding: 10px 0px;
+		font-weight: 600;
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
 	.inner-main-title {
 		height: 100%;
 	}
@@ -1176,10 +1213,6 @@ article.sticky {
 
 	.col-md-4 .post-thumb {
 		display: none;
-	}
-
-	#blog-menu {
-		background: white;
 	}
 
 	#blog-menu .col-md-4 {
@@ -1795,8 +1828,15 @@ object {
 }
 @media only screen and (max-width: 767px){
 	.site-content{
-		margin-top: 2em;
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
 	}
+
+	.site-content p {
+		text-align: justify;
+	}
+
 	.inner-main-title{
 	}
 
@@ -1809,6 +1849,7 @@ object {
 		padding: 1px;
 	}
 }
+
 .secondary-sidebar .container{
 	max-width: 100%;
 }
