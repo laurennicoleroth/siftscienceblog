@@ -49,7 +49,17 @@ get_header(); ?>
   		?>
   	</div>
   	<div class="col-md-4">
-  		<?php get_search_form( ); ?>
+  		<!-- <?php get_search_form( ); ?> -->
+      <form role="search" method="get" class="search-form" action="http://prodigitalnomad.com/">
+        <label>
+          <input type="search"
+                class="search-field"
+                placeholder="Search"
+                value="" name="s"
+                title="Search efter:">
+        </label>
+        <input type="submit" class="search-submit" value="Search">
+      </form>
   		<!-- <svg class="icon-search">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
       </svg> -->
