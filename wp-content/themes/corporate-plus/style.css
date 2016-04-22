@@ -717,8 +717,17 @@ address {
 		/*border-top: 1px solid #999;*/
 	}
 
-	#utility {
-		display: none;
+	.col-md-8 {
+		width: 100%;
+	}
+
+	#blog-menu ul {
+		padding: 0px 0px;
+	}
+
+	#utility li {
+		/*display: none;*/
+		display: inline-block;
 	}
 
 	#blog-menu {
@@ -918,9 +927,9 @@ address {
 
 /* Search widget. */
 .search-form {
-	position: absolute;
-	left: 50px;
-	top: 1px;
+	/*position: absolute;
+	left: 70px;
+	top: 1px;*/
 }
 
 .search-form input {
@@ -1525,6 +1534,13 @@ object {
 	}
 }
 @media only screen and (max-width: 640px) and (min-width: 480px) {
+
+	#blog-menu .col-md-8 {
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+	}
+
 	.text-slider-wrapper {
 		margin-top: -105px;
 	}
@@ -1543,6 +1559,8 @@ object {
 }
 
 @media only screen and (max-width: 479px) {
+
+
 	.text-slider-wrapper {
 		margin-top: -165px;
 	}
@@ -1551,11 +1569,11 @@ object {
 		display: none;
 	}
 
-.inner-main-title .col-md-6 p {
-    font-size: 1em;
-    max-width: 450px;
-    font-weight: 100;
-}
+	.inner-main-title .col-md-6 p {
+	    font-size: 1em;
+	    max-width: 450px;
+	    font-weight: 100;
+	}
 
 	.inner-main-title {
 		padding: 30px;
@@ -1989,7 +2007,9 @@ object {
     border: 1px solid #608a9e;
     border-radius: 5px;
     margin-left: 20px;
+    display: none;
  }
+
 .error404 #primary .page-content .search-block,
 .search-no-results #primary .page-content .search-block {
 	float: none;

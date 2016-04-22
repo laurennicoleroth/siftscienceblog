@@ -38,18 +38,15 @@ get_header(); ?>
 
 <div id="blog-menu" class="row animate">
 	<div class="container">
-  	<div class="col-md-8">
-  		<?php wp_nav_menu(
+
+      <?php wp_nav_menu(
                 array(
                     'theme_location' => 'utility',
                     'menu_id' => 'utility',
                     'menu_class' => 'nav navbar-nav animated',
                 )
             );
-  		?>
-  	</div>
-  	<div class="col-md-4">
-  		<!-- <?php get_search_form( ); ?> -->
+      ?>
 
       <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
         <label>
@@ -67,7 +64,7 @@ get_header(); ?>
       </form>
 
   		<a id="newsletter" href="#">newsletter sign up</a>
-  	</div>
+
 	</div>
 </div>
 
