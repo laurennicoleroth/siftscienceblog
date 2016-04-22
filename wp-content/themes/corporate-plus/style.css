@@ -633,7 +633,17 @@ address {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
+@media screen and (min-width: 1200px) {
+	#blog-menu {
+		border: 1px solid magenta;
+	}
+}
+
 @media screen and (max-width: 1199px) and (min-width: 1024px){
+	#blog-menu {
+		border: 1px solid purple;
+	}
+
 	.main-navigation a {
 		font-size: 14px;
 		padding: 18px 23px;
@@ -671,6 +681,10 @@ address {
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
+	#blog-menu {
+		border: 1px solid blue;
+	}
+
 	.color-hexagon, .color-logo {
     display: none;
 	}
@@ -728,10 +742,6 @@ address {
 	#utility li {
 		/*display: none;*/
 		display: inline-block;
-	}
-
-	#blog-menu {
-		padding-bottom: 35px;
 	}
 
 	.main-navigation{
@@ -927,9 +937,7 @@ address {
 
 /* Search widget. */
 .search-form {
-	/*position: absolute;
-	left: 70px;
-	top: 1px;*/
+    padding-top: 10px;
 }
 
 .search-form input {
@@ -946,7 +954,6 @@ address {
 
 .search-field {
 	background-color: transparent;
-	/*background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);*/
 	background-position: 5px center;
 	background-repeat: no-repeat;
 	background-size: 24px 24px;
@@ -966,7 +973,7 @@ address {
 	border: 1px solid #ebebeb;
 	cursor: text;
 	outline: 0;
-	width: 200px;
+	width: 150px;
 	border-radius: 5px;
 }
 
@@ -1291,25 +1298,14 @@ article.sticky {
 		display: none;
 	}
 
-	#blog-menu .col-md-4 {
-		width: 100%;
-		text-align: center;
-	}
-
 	#blog-menu #newsletter {
-		display: none;
+		/*display: none;*/
 	}
 
 	#blog-menu ul {
-		display: none;
+		/*display: none;*/
 	}
 
-	#blog-menu ul li{
-		background: white;
-		padding: 7px 0px;
-		border-bottom: 1px solid #eeeeee;
-		text-align: center;
-	}
 }
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -1401,9 +1397,7 @@ object {
 .gallery-caption {
 	display: block;
 }
-/*------------------------------------------------------*\
-    #Custom CSS
-\*--------------------------------------------------------*/
+
 /*-----------------*\
     #HEADER
 \*-----------------*/
@@ -1518,6 +1512,10 @@ object {
 	font-size: 3em;
 }
 @media only screen and (max-width: 767px) {
+	#blog-menu {
+		border: 1px solid green;
+	}
+
 	.text-slider-wrapper .lead {
 		font-size: 36px;
 		margin-bottom: 0;
@@ -1533,7 +1531,11 @@ object {
 	.inner-main-title .right {
 	}
 }
+
 @media only screen and (max-width: 640px) and (min-width: 480px) {
+	#blog-menu {
+		border: 1px solid pink;
+	}
 
 	#blog-menu .col-md-8 {
 		display: inline-block;
@@ -1559,7 +1561,14 @@ object {
 }
 
 @media only screen and (max-width: 479px) {
+	#blog-menu {
+		border: 1px solid red;
+		padding-left: 60px;
+	}
 
+	#blog-menu ul {
+		display: none;
+	}
 
 	.text-slider-wrapper {
 		margin-top: -165px;
@@ -1719,6 +1728,7 @@ object {
 	line-height: 60px;
 }
 @media only screen and (max-width: 1023px) {
+
 	.service-item {
 		margin-bottom: 40px;
 	}
