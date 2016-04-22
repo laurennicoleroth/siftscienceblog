@@ -1537,10 +1537,15 @@ object {
 		border: 1px solid pink;
 	}
 
-	#blog-menu .col-md-8 {
-		display: inline-block;
-		width: 100%;
-		height: 30px;
+	#blog-menu ul {
+		width: 600px;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.search-form {
+		/*margin-left: 100px;*/
+		text-align: center;
 	}
 
 	.text-slider-wrapper {
