@@ -685,6 +685,36 @@ address {
 		border: 1px solid blue;
 	}
 
+	.sift-brand {
+		position: absolute;
+		top: 13px;
+		left: 20px;
+	}
+
+	#primary-menu {
+		width: 59%;
+		margin-left: 80px;
+	}
+
+	#utility a {
+		font-size: 12px;
+	}
+
+	#primary-menu a {
+		font-size: 12px;
+		padding: 0px 3px;
+	}
+
+	#blog-menu ul {
+		width: 600px;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.search-form {
+		text-align: center;
+	}
+
 	.color-hexagon, .color-logo {
     display: none;
 	}
@@ -697,7 +727,6 @@ address {
 		fill: white;
 		height: 20px;
 		width: 22px;
-		position: absolute;
 	}
 
 }
