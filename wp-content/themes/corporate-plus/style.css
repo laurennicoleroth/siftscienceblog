@@ -923,9 +923,21 @@ address {
 	top: 1px;
 }
 
+.search-form input {
+	text-transform: uppercase;
+	font-family: 'ProximaNova';
+	font-weight: 200;
+	text-align: center;
+}
+
+.fa {
+	color: #608a9e;
+	font-size: 1.5em;
+}
+
 .search-field {
 	background-color: transparent;
-	background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);
+	/*background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);*/
 	background-position: 5px center;
 	background-repeat: no-repeat;
 	background-size: 24px 24px;
@@ -956,10 +968,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-/*input[type="search"] {
-  -webkit-appearance: textfield;
-}
-
 input[type="search"] {
   -webkit-appearance: textfield;
 }
@@ -968,14 +976,19 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
 
 .widget_search .search-submit {
 	display: none;
 }
+
 .widget_search{
 	position: relative;
 	width: 100%;
-}*/
+}
+
 /*** CALENDER ***/
 #calendar_wrap #wp-calendar {
 	width: 100%;
