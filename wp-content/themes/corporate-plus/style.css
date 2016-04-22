@@ -957,7 +957,8 @@ address {
 	border: 1px solid #ebebeb;
 	cursor: text;
 	outline: 0;
-	width: 230px;
+	width: 200px;
+	border-radius: 5px;
 }
 
 .search-submit {

@@ -65,9 +65,7 @@ get_header(); ?>
 
 
       </form>
-  		<!-- <svg class="icon-search">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
-      </svg> -->
+
   		<a id="newsletter" href="#">newsletter sign up</a>
   	</div>
 	</div>
