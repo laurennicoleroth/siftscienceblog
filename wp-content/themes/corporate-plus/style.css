@@ -683,6 +683,26 @@ address {
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	#blog-menu {
 		border: 1px solid blue;
+		position: relative;
+	}
+
+	.container {
+    width: 841px;
+	}
+
+	.post-thumb {
+		display: none;
+	}
+
+	.inner-main-title {
+		height: 100%;
+		padding-top: 40px;
+	}
+
+	.inner-main-title img {
+		padding-top: 40px;
+		margin-bottom: -30px;
+
 	}
 
 	.sift-brand {
@@ -692,8 +712,8 @@ address {
 	}
 
 	#primary-menu {
-		width: 59%;
-		margin-left: 80px;
+		width: 65%;
+		margin-left: 100px;
 	}
 
 	#utility a {
@@ -702,17 +722,12 @@ address {
 
 	#primary-menu a {
 		font-size: 12px;
-		padding: 0px 3px;
+		padding: 0px 5px;
 	}
 
 	#blog-menu ul {
-		width: 600px;
 		text-align: center;
 		padding-top: 10px;
-	}
-
-	.search-form {
-		text-align: center;
 	}
 
 	.color-hexagon, .color-logo {
@@ -1075,11 +1090,10 @@ input[type="search"] {
 # Content
 --------------------------------------------------------------*/
 .inner-main-title {
-	height: 363px;
 	background-color: #f7ba50;
 	text-align: left;
-	padding:80px;
 	overflow: hidden;
+	/*padding-top: 30px;*/
 }
 
 #archive {
@@ -1093,6 +1107,8 @@ input[type="search"] {
 
 .inner-main-title .col-md-6 {
     text-align: left;
+    width: 50%;
+    float: left;
 }
 
 .inner-main-title .col-md-6 h1 {
