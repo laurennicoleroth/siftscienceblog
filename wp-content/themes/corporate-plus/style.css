@@ -635,13 +635,62 @@ address {
 
 @media screen and (min-width: 1200px) {
 	#blog-menu {
-		border: 1px solid magenta;
+		/*border: 1px solid magenta;*/
 	}
+
+	.container {
+		max-width: 1080px;
+	}
+
+	#newsletter {
+		float: right;
+		margin-right: 20px;
+		margin-top: 12px;
+	}
+
+	#primary-menu {
+		margin-left: 155px;
+	}
+
+	.inner-main-title {
+		padding-top: 150px;
+	}
+
+	.inner-main-title img {
+		margin-bottom: -32px;
+	}
+
+	.sift-brand {
+		position: absolute;
+		top: 14px;
+		left: 30px;
+	}
+
+	.search-form {
+		position: absolute;
+    right: 290px;
+	}
+
+	.search-field:focus {
+		background-color: #fff;
+		border: 1px solid #ebebeb;
+		cursor: text;
+		outline: 0;
+		width: 100px;
+		border-radius: 5px;
+		z-index: 3000;
+	}
+
+	.main-navigation a {
+		font-size: 14px;
+		padding: 18px 23px;
+	}
+
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px){
 	#blog-menu {
-		border: 1px solid purple;
+		/*border: 1px solid purple;*/
 	}
 
 	#newsletter {
@@ -654,11 +703,12 @@ address {
 	}
 
 	.inner-main-title {
-		padding-top: 80px;
+		padding-top: 90px;
 	}
 
 	.inner-main-title img {
 		margin-bottom: -32px;
+		max-width: 110%;
 	}
 
 	.sift-brand {
@@ -720,7 +770,7 @@ address {
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	#blog-menu {
-		border: 1px solid blue;
+		/*border: 1px solid blue;*/
 		position: relative;
 	}
 
@@ -758,11 +808,15 @@ address {
 
 	.inner-main-title {
 		height: 100%;
+		padding-top: 80px;
+	}
+
+	.inner-main-title h1 {
 		padding-top: 40px;
 	}
 
 	.inner-main-title img {
-		padding-top: 40px;
+		padding-top: 80px;
 		margin-bottom: -30px;
 
 	}
@@ -775,7 +829,7 @@ address {
 
 	#primary-menu {
 		width: 65%;
-		margin-left: 100px;
+		margin-left: 110px;
 	}
 
 	#utility a {
@@ -1620,7 +1674,7 @@ object {
 }
 @media only screen and (max-width: 767px) {
 	#blog-menu {
-		border: 1px solid green;
+		/*border: 1px solid green;*/
 	}
 
 	.text-slider-wrapper .lead {
@@ -1641,7 +1695,7 @@ object {
 
 @media only screen and (max-width: 640px) and (min-width: 480px) {
 	#blog-menu {
-		border: 1px solid pink;
+		/*border: 1px solid pink;*/
 	}
 
 	#blog-menu ul {
@@ -1674,7 +1728,7 @@ object {
 
 @media only screen and (max-width: 479px) {
 	#blog-menu {
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 		padding-left: 20px;
 	}
 
@@ -2168,6 +2222,7 @@ object {
 .single-thumb-full,
 .single-thumb-full img{
 	width:100%;
+	display: none;
 }
 .posted-on,
 .cat-links,

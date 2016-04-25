@@ -13,7 +13,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('init-animate fadeInDown animated'); ?>>
 	<div class="single-feat clearfix">
 		<?php
-		$sidebar_layout = corporate_plus_sidebar_selection();
+		// $sidebar_layout = corporate_plus_sidebar_selection();
+		$sidebar_layout = "sidebar-right";
 		if( has_post_thumbnail() ):
 			if( $sidebar_layout == "no-sidebar"){
 				$thumbnail = 'full';
@@ -55,3 +56,4 @@
 	</div>
 
 </article><!-- #post-## -->
+
