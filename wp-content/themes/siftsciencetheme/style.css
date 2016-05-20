@@ -263,14 +263,14 @@ th {
 /*http://localhost:8888/siftscience/wp-content/themes/siftsciencetheme//wp-content/themes/siftsciencetheme/assets/fonts/proxima/*/
 @font-face {
 	font-family: 'ProximaNova';
-	src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
+	src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
     font-weight: 100;
 }
 
 @font-face {
     /* Light */
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
     font-weight: 200;
     font-style: normal;
 }
@@ -278,7 +278,7 @@ th {
 @font-face {
     /* Regular */
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Regular.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Regular.otf');
     font-weight: 400;
     font-style: normal;
 }
@@ -286,7 +286,7 @@ th {
 @font-face {
     /*sbold*/
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Semibold.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Semibold.otf');
     font-weight: 600;
     font-style: normal;
 }
@@ -294,7 +294,7 @@ th {
 @font-face {
     /*bold*/
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Bold.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Bold.otf');
     font-weight: 700;
     font-style: normal;
 }
@@ -302,7 +302,7 @@ th {
 @font-face {
     /*light italic*/
     font-family: 'ProximaNova';
-    src: url('http://localhost:8888/siftscience/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-Light.otf');
     font-weight: 200;
     font-style: italic;
 }
@@ -310,7 +310,7 @@ th {
 @font-face {
     /*regular italic*/
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-RegItalic.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-RegItalic.otf');
     font-weight: 400;
     font-style: italic;
 }
@@ -318,7 +318,7 @@ th {
 @font-face {
     /*semi bold italic*/
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-SemiboldItalic.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-SemiboldItalic.otf');
     font-weight: 600;
     font-style: italic;
 }
@@ -326,7 +326,7 @@ th {
 @font-face {
     /*bold italic*/
     font-family: 'ProximaNova';
-    src: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-BoldIt.otf');
+    src: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/fonts/proxima/ProximaNova-BoldIt.otf');
     font-weight: 700;
     font-style: italic;
 }
@@ -775,7 +775,7 @@ ul#social-media-links {
 #share a {
     width: 76px;
     height: 20px !important;
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/share.png') !important;
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/share.png') !important;
     color: transparent;
 }
 
@@ -796,34 +796,33 @@ ul#social-media-links {
 }
 
 .a2a_button_twitter {
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
     background-position: 0px 0px;
 }
 
 .a2a_button_facebook {
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
     background-position: 141px 0px;
 }
 
 .a2a_button_email {
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
     background-position: 105px 0px;
 }
 
 .a2a_button_linkedin {
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
     background-position: 70px 0px;
 }
 
 .a2a_button_google_plus {
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');
     background-position: 35px 0px;
 }
 
 #social-media-links li {
     width: 35px;
     height: 35px;
-    /*background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/social-sprite.png');*/
 }
 
 #social-media-links li a {
@@ -854,7 +853,7 @@ ul#social-media-links {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 400;
-    background: url('http://siftscienceblog.laurennicoleroth.com/wp-content/themes/siftsciencetheme/assets/img/category.png');
+    background: url('/siftscienceblog/wp-content/themes/siftsciencetheme/assets/img/category.png');
     background-color: #86a9a8;
     background-repeat: no-repeat;
     background-position: 0px -1px;
@@ -1067,17 +1066,24 @@ a:active {
 ## Top Menu
 --------------------------------------------------------------*/
  header#topnav {
-    -webkit-transition: background-color .5s,height .5s;
-    -moz-transition: background-color .5s,height .5s;
-    transition: background-color .5s,height .5s;
-    background-color: #f7ba50;
-    padding: 7px 5%;
-    /* position: absolute; */
-    top: 0;
-     width: 100%;
-    z-index: 1000;
-    display: block;
+    -webkit-transition: background-color .5s, height .5s;
+      -moz-transition: background-color .5s, height .5s;
+      transition: background-color .5s, height .5s;
+      background-color: transparent;
+      box-shadow: 0 0 0 #fff;
+      height: 80px;
+      padding: 0 2%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1000; 
+}
+
+header:before {
+    display: inline-block;
     vertical-align: middle;
+    content: '';
+    height: 100%;
 }
 
 header.trans-fixed {
